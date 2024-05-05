@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://elle-miller.github.io/al-folio/sitemap.xml
+Sitemap: https://ellemiller.info/al-folio/sitemap.xml
