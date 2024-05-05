@@ -1,200 +1,167 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Elle Miller",
+    "label": "PhD Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "elle.miller@ed.ac.uk",
+    "url": "https://ellemiller.info/",
+    "summary": "Inspired and self-directed PhD student equipped with 8 years of academic and industry experience. My aspiration is to create intelligent systems that benefit individuals and society.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+      "address": "Bayes Centre",
+      "city": "Edinburgh",
+      "countryCode": "UK"
+    }
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "DLR Institute for Robotics and Mechatronics",
+      "position": "Research Engineer",
+      "startDate": "2023-03",
+      "endDate": "2023-09",
+      "summary": "Researched unknown object grasping for assistive robotics."
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "NASA Jet Propulsion Laboratory",
+      "position": "Research Engineer",
+      "startDate": "2022-07",
+      "endDate": "2022-12",
+      "summary": "Researched robotic perception for hazardous terrains."
+    },
+    {
+      "name": "SLMC Research Lab, University of Edinburgh",
+      "position": "Robotics Intern",
+      "startDate": "2022-01",
+      "endDate": "2022-05",
+      "summary": "Integrated a dual-armed torso robot with an omnidirectional mobile base to create EVA."
+    },
+    {
+      "name": "Max Planck Institute for Astronomy",
+      "position": "Research Intern",
+      "startDate": "2020-06",
+      "endDate": "2021-10",
+      "summary": "1 of 5 interns to be selected internationally, embarked on a 1+ year research project that resulted in a first-author MNRAS publication."
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "name": "University of Edinburgh",
+      "position": "PhD Student | Robotics and Autonomous Systems CDT",
+      "url": "https://www.edinburgh-robotics.org/",
+      "startDate": "2023-09-12",
+      "endDate": "2027-09-12",
+      "summary": "4-year PhD programme",
+      "highlights": ["Robotics", "Reinforcement learning"]
+    },
+    {
+      "institution": "University of Sydney",
+      "location": "Australia",
+      "area": "BEng (Mechatronic (Space)) & BSc (Advanced Physics)",
+      "studyType": "Bachelors",
+      "startDate": "2017",
+      "endDate": "2023",
+      "score": "85",
+      "courses": ["TODO"]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "title": "Best Talk at Annual Edinburgh RAS CDT Conference",
+      "date": "2024",
+      "awarder": "Edinburgh Centre for Robotics",
+      "url": "https://www.edinburgh-robotics.org/events/cdt-ras-conference",
+      "summary": "Received an award for giving the best student lightning talk in my PhD programme."
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "title": "Engineering Student Industry Placement Scholarship",
+      "date": "2021",
+      "awarder": "NASA JPL",
+      "summary": "The University of Sydney 2021 candidate to be selected by NASA JPL to undertake an extended research placement."
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "title": "Dean's Excellence in Academic Performance",
+      "date": "2023",
+      "awarder": "University of Sydney",
+      "summary": "Awarded to high performing students who achieve an average mark of a High Distinction or greater."
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
+      "title": "Sydney Scholars Award",
+      "date": "2017-2022",
+      "awarder": "University of Sydney",
+      "summary": "Awarded to outstanding and all-round students who demonstrate leadership skills in the school and community."
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "title": "Proxime of Secondary School",
+      "date": "2016",
+      "awarder": "Secondary School",
+      "summary": "Ranked in top 0.6% of 55000+ students in 2016 HSC, with an ATAR of 99.60."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
+      "name": "Theoretical backgrounds",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Mathematics",
+        "Physics",
+        "Mechatronic engineering",
+        "Computer science",
+        "Machine learning"
       ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "name": "Programming",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Python",
+        "C/C++",
+        "Matlab",
+        "Assembly"
+      ]
+    },
+    {
+      "name": "Robotics",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "ROS",
+        "Gazebo",
+        "PyBullet",
+        "MuJoCo",
+        "IsaacSim"
+      ]
     }
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Robotics",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Assistive robotics",
+        "Space robotics",
+        "Dexterous manipulation"
+      ]
+    },
+    {
+      "name": "Reinforcement learning",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Multimodal sensing",
+        "Representation learning"
       ]
     }
   ],
-  "references": [
+  "volunteer": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "organization": "Pyjama Foundation",
+      "location": "Sydney, Australia",
+      "summary": "Offer support and friendship to children in fostercare."
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "organization": "Best Buddies",
+      "location": "Edinburgh, UK",
+      "summary": "Help out at weekly social nights for adults with disabilities."
     }
   ]
 }
