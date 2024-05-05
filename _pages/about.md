@@ -22,3 +22,24 @@ I had the incredible opportunity to work for **NASA's Jet Propulsion Laboratory*
 I graduated with First Class Honours in a BEng (Mechatronic (Space)) & BSc (Advanced Physics) from the **University of Sydney** in 2023. As an undergraduate, I undertook several internships in parallel with my studies, working with the **Max Planck Institute of Astronomy**, **University of Cambridge**, **Cochlear**, **Australian National University**, and **Saber Astronautics**.
 
 I am very excited by the intersection of robotics and machine learning, and how these fields can advance and benefit humanity in a wide range of settings from space exploration to healthcare. On a personal note, I enjoy playing and making music, film photography, cinema, and seeing the world. Feel free to get in contact!
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/eva.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/justin.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/edan.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/mars.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<div class="caption">
+    Some memorable colleagues: DLR's EDAN & Justin, NASA's Perseverance & Ingenuity, SLMC's EVA
+</div>
