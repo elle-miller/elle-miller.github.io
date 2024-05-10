@@ -234,6 +234,51 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Manual Control</h2>
+          <p>
+            In manual mode, the user can toggle between controlling the end-effector translation, 
+            rotating, and closing the gripper. 
+          </p>
+          <video id="manual" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/manual_mode.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3">Our Method</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              In our approach, the user guides the end-effector across a virtual hemisphere centered 
+              around the object to their desired approach direction. This is sent to a physics-based 
+              grasp planner which computes the the best grasp pose on the reconstruction, and finally 
+              the user guides the end-effector to this grasp.
+            </p>
+            <video id="shared" controls playsinline height="100%">
+              <source src="./static/videos/our_method.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+</section>
+
  
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
