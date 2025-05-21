@@ -15,9 +15,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi there! I’m Elle, a **2nd year PhD student** at the University of Edinburgh (UoE).
+Hi there! I’m Elle, a **2nd year PhD student** at the University of Edinburgh.
 
-I’m researching reinforcement learning for contact-rich robotic manipulation, with an emphasis on tactile sensing. I'm planning on applying my research widely, from dexterous manipulation to physical assistance for people with motor impairments.
+I’m interested in generalisable methods for improving the performance of robotic reinforcement learning agents in contact-rich manipulation, with a focus on tactile sensing. I'm planning on applying my research to a wide range of scenarios, from dexterous manipulation to humanoid physical assistance in healthcare.
 
 I am fortunate to have an awesome PhD supervision team: [Prof. Sethu Vijayakumar](https://web.inf.ed.ac.uk/slmc) (UoE), [Associate Prof. Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod/) (UoE), [Dr. David Abel](https://david-abel.github.io/) (UoE, DeepMind), and [Associate Prof. Rika Antonova](https://contactrika.github.io/) (University of Cambridge).
 
