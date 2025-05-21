@@ -15,13 +15,19 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi there! I'm Elle, currently a **1st year PhD student** at the [University of Edinburgh](https://www.edinburgh-robotics.org/) supervised by [Prof. Sethu Vijayakumar](https://web.inf.ed.ac.uk/slmc) and [Dr. Stefano V. Albrecht](https://agents.inf.ed.ac.uk/). I'm researching reinforcement learning for contact-rich robotic manipulation, with an emphasis on multimodal and tactile sensing. I hope to apply my research to scenarios ranging from dexterous manipulation to physical assistance for people with motor impairments.
+Hi there! I’m Elle, a **2nd year PhD student** at the University of Edinburgh (UoE).
 
-I had the incredible opportunity to work for **NASA's Jet Propulsion Laboratory** and the **DLR Institute for Mechatronics and Robotics** after university. At NASA I researched semantic perception for robotic autonomy in hazardous environments, while at DLR I worked on an inspiring assistive robotics system called [EDAN](https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-11670). Along the way I also helped create a mobile humanoid robot called [EVA](https://youtu.be/nMkcBbofDY0)! 
+I’m researching reinforcement learning for contact-rich robotic manipulation, with an emphasis on tactile sensing. I'm planning on applying my research widely, from dexterous manipulation to physical assistance for people with motor impairments.
+
+I am fortunate to have an awesome PhD supervision team: [Prof. Sethu Vijayakumar](https://web.inf.ed.ac.uk/slmc) (UoE), [Associate Prof. Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod/) (UoE), [Dr. David Abel](https://david-abel.github.io/) (UoE, DeepMind), and [Associate Prof. Rika Antonova](https://contactrika.github.io/) (University of Cambridge).
+
+Prior to my doctorate I worked for **NASA Jet Propulsion Laboratory (JPL)** and the **DLR Institute for Mechatronics and Robotics**. At NASA I researched semantic perception for robotic autonomy in hazardous environments, while at DLR I worked improving user agency in grasping on the  inspiring assistive robotics system [EDAN](https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-11670). Along the way I also helped create a mobile humanoid robot called [EVA](https://youtu.be/nMkcBbofDY0).
 
 I graduated with First Class Honours in a BEng (Mechatronic (Space)) & BSc (Advanced Physics) from the **University of Sydney** in 2023. As an undergraduate, I undertook several internships in parallel with my studies, working with the **Max Planck Institute of Astronomy**, **University of Cambridge**, **Cochlear**, **Australian National University**, and **Saber Astronautics**.
 
-I am very excited by the intersection of robotics and machine learning, and how these fields can advance and benefit humanity in a wide range of settings from space exploration to healthcare. On a personal note, I enjoy playing and making music, film photography, cinema, and seeing the world. Feel free to get in contact!
+<!-- I would like to see a world where robots very excited by the intersection of robotics and machine learning, and how these fields can advance and benefit humanity in a wide range of settings from space exploration to healthcare.  -->
+
+On a personal note, I enjoy playing and making music, film photography, lindy hop, cinema, and living in different cities. Feel free to get in touch 💌
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -41,5 +47,5 @@ I am very excited by the intersection of robotics and machine learning, and how 
 </div>
 
 <div class="caption">
-    Some memorable colleagues: DLR's EDAN & Justin, NASA's Perseverance & Ingenuity, SLMC's EVA
+    Memorable colleagues (clockwise): SLMC's EVA, DLR's EDAN & Justin, and NASA's Perseverance & Ingenuity.
 </div>
