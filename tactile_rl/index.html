@@ -89,33 +89,14 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Enhancing Tactile-based Reinforcement Learning for Robotic Control</h1>
+          <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://elle-miller.github.io">Elle Miller</a><sup>1,2</sup>,</span>
-            <!-- <span class="author-block"> -->
-              <!-- <a href="https://madurner.github.io/">Maximilian Durner</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.hummat.com/">Matthias Humt</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=ngO7dNAAAAAJ&hl=en">Gabriel Quere</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/wout-boerdijk-b15a47130">Wout Boerdijk</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.de/citations?user=iZV2-p8AAAAJ&hl=en">Ashok M. Sundaram</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.freekstulp.net/">Freek Stulp</a><sup>1</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.de/citations?user=sCFZysQAAAAJ&hl=de">Jörn Vogel</a><sup>1</sup>
-            </span> -->
+              <a href="https://elle-miller.github.io/">Elle Miller</a><sup>1,2</sup>,</span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Edinburgh,</span>
-            <span class="author-block"><sup>2</sup></span>
+            <span class="author-block"><sup>1</sup>DLR Institute of Robotics and Mechatronics,</span>
+            <span class="author-block"><sup>2</sup>University of Edinburgh</span>
           </div>
 
           <div class="column has-text-centered">
@@ -177,20 +158,15 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <img src="./static/images/method.pdf"
          class="interpolation-image"
          alt="Interpolate start reference image."/>
-      <!-- <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2> -->
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="section">
@@ -244,7 +220,7 @@
         <div class="content">
           <h2 class="title is-3">Best PPO agent</h2>
           <p>
-            13 rotations
+            Trained end-to-end
           </p>
           <video id="manual" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/baoding/best_e2e.mp4"
@@ -260,7 +236,7 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              Dynamics optimisation + auxiliary memory  
+              Trained with self-supervised dynamics + auxiliary memory  
             </p>
             <video id="shared" controls playsinline height="100%">
               <source src="./static/videos/baoding/best_dynamics_memory.mp4"
