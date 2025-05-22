@@ -88,10 +88,10 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Enhancing Tactile-based Reinforcement Learning for Robotic Control
+          <h1 class="title is-1 publication-title">Enhancing Tactile-based Reinforcement Learning for Robotic Control</h1>
             <span class="author-block">
               <a href="https://elle-miller.github.io">Elle Miller</a><sup>1,2</sup>,</span>
-            <span class="author-block">
+            <!-- <span class="author-block"> -->
               <!-- <a href="https://madurner.github.io/">Maximilian Durner</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://www.hummat.com/">Matthias Humt</a><sup>1</sup>,
@@ -242,13 +242,12 @@
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Manual Control</h2>
+          <h2 class="title is-3">Best PPO agent</h2>
           <p>
-            In manual mode, the user can toggle between controlling the end-effector translation, 
-            rotating, and closing the gripper. 
+            13 rotations
           </p>
           <video id="manual" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/manual_mode.mp4"
+            <source src="./static/videos/baoding/best_e2e.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -257,15 +256,14 @@
 
       <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-3">Our Method</h2>
+        <h2 class="title is-3">Our best agent</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              We combine user intention, shared control, and grasp planning to empower user while
-              reducing cognitive load.  
+              Dynamics optimisation + auxiliary memory  
             </p>
             <video id="shared" controls playsinline height="100%">
-              <source src="./static/videos/our_method.mp4"
+              <source src="./static/videos/baoding/best_dynamics_memory.mp4"
                       type="video/mp4">
             </video>
           </div>
