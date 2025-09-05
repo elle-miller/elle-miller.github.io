@@ -49,3 +49,5 @@ On a personal note, I enjoy playing and making music, film photography, lindy ho
 <div class="caption">
     Memorable colleagues (clockwise): SLMC's EVA, DLR's EDAN & Justin, and NASA's Perseverance & Ingenuity.
 </div>
+
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=G3JqO2IkDumQbXPCgL1ii_R51Ml__n42MQd4Bkg71XQ&cl=ffffff&w=a"></script>
