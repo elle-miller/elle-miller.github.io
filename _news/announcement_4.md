@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our [work](https://elle-miller.github.io/tactile_rl/) has been accepted to NeurIPS 2025! This is my PhD paper 🎉
+Our [work](https://elle-miller.github.io/tactile_rl/) has been accepted to NeurIPS 2025! This is my 1st PhD paper 🎉
