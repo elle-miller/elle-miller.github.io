@@ -177,14 +177,15 @@
 <!-- Method Figure Section --><section class="py-8">
     <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-white p-8 rounded-3xl shadow-xl text-center">
-            <h2 class="text-3xl font-extrabold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">Method Diagram</h2>
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">Methodology</h2>
             <div class="flex justify-center mt-6">
                 <!-- Placeholder for the Method Diagram Figure --><div class="w-full max-w-4xl p-4 bg-indigo-50 border-4 border-dashed border-indigo-300 rounded-xl">
-                    <img src="https://placehold.co/800x450/e0e7ff/6366f1?text=PLACEHOLDER+FOR+METHOD+FIGURE" 
-                         alt="Method Diagram Placeholder" 
+                    <img src="./static/images/method.pdf" 
+                         alt="Method" 
                          class="w-full h-auto rounded-lg shadow-md"
                          onerror="this.onerror=null; this.src='https://placehold.co/800x450/e0e7ff/6366f1?text=Method+Diagram+Figure+Missing'">
-                    <p class="mt-3 text-lg font-medium text-indigo-800">Figure 1: High-level overview of the proposed self-supervised reinforcement learning architecture.</p>
+                    <p class="mt-3 text-lg font-medium text-indigo-800">Figure 1: Tactile-based RL with self-supervision. By jointly training the observation encoder with self-supervision, the agent
+                        transforms complex sensory input into representations that capture object positions and velocities.</p>
                 </div>
             </div>
         </div>
@@ -198,30 +199,23 @@
             <div class="grid md:grid-cols-2 gap-8">
                 
                 <!-- Best PPO agent --><div class="space-y-4">
-                    <h3 class="text-2xl font-bold text-gray-800">Best PPO agent (End-to-End)</h3>
+                    <h3 class="text-2xl font-bold text-gray-800">PPO Baseline</h3>
                     <video id="manual" autoplay controls muted loop playsinline class="w-full rounded-xl shadow-lg">
                         <source src="./static/videos/baoding/best_ppo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">Trained end-to-end.</p>
+                    <p class="text-gray-600">The standard reinforcement learning approach.</p>
                 </div>
 
                 <!-- Our best agent --><div class="space-y-4">
-                    <h3 class="text-2xl font-bold text-gray-800">Our Best Agent</h3>
+                    <h3 class="text-2xl font-bold text-gray-800">Our SSL Agent</h3>
                     <video id="shared" autoplay controls muted loop playsinline class="w-full rounded-xl shadow-lg">
                         <source src="./static/videos/baoding/best_dynamics_memory.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">Trained with self-supervised dynamics + an auxiliary memory.</p>
+                    <p class="text-gray-600">Jointly trained with self-supervised dynamics.</p>
                 </div>
             </div>
-            <!-- Script to control playback rate if necessary (kept from original) --><script>
-              document.querySelectorAll('video').forEach(video => {
-                if (video.id === 'manual' || video.id === 'shared') { // Only apply to these specific videos
-                    video.playbackRate = 0.5; // Example slow-down
-                }
-              });
-            </script>
         </div>
     </div>
 </section>
@@ -242,12 +236,12 @@
                 </div>
                 <!-- Our Dynamics Agent Column -->
                 <div class="space-y-4">
-                    <h3 class="text-2xl font-bold text-gray-800">Our Dynamics Agent</h3>
+                    <h3 class="text-2xl font-bold text-gray-800">Our SSL Agent</h3>
                     <video autoplay controls muted loop playsinline class="w-full rounded-xl shadow-lg">
                         <source src="./static/videos/bounce/best_dynamics.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">Trained with self-supervised dynamics.</p>
+                    <p class="text-gray-600">Jointly trained with self-supervised dynamics.</p>
                 </div>
             </div>
         </div>
@@ -270,12 +264,12 @@
                 </div>
                 <!-- Our Dynamics Agent Column -->
                 <div class="space-y-4">
-                    <h3 class="text-2xl font-bold text-gray-800">Our Dynamics Agent</h3>
+                    <h3 class="text-2xl font-bold text-gray-800">Our SSL Agent</h3>
                     <video autoplay controls muted loop playsinline class="w-full rounded-xl shadow-lg">
                         <source src="./static/videos/find/best_dynamics.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">Trained with self-supervised dynamics.</p>
+                    <p class="text-gray-600">Jointly trained with self-supervised dynamics.</p>
                 </div>
             </div>
         </div>
@@ -298,14 +292,6 @@
 
 <footer class="py-6 bg-white/70 backdrop-blur-md mt-8 shadow-inner">
     <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="flex justify-center space-x-6 mb-4">
-            <a class="text-gray-500 hover:text-indigo-600 transition duration-150" href="https://arxiv.org/pdf/2510.21609">
-                <i class="fas fa-file-pdf fa-lg"></i>
-            </a>
-            <a class="text-gray-500 hover:text-indigo-600 transition duration-150" href="https://github.com/elle-miller/roto">
-                <i class="fab fa-github fa-lg"></i>
-            </a>
-        </div>
         <p class="text-sm text-gray-600">
             Website template styling inspired by <a href="https://github.com/nerfies/nerfies.github.io" class="text-indigo-600 hover:text-indigo-800 transition duration-150">NeRFies</a>.
         </p>
