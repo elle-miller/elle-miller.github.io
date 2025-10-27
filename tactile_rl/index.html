@@ -43,7 +43,10 @@
     <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
             <div class="flex-shrink-0">
-                <span class="text-2xl font-black text-indigo-600">Paper Hub</span>
+                <!-- Dynamic Title: Hidden by default, appears on scroll -->
+                <span id="nav-title" class="text-xl sm:text-2xl font-black text-indigo-600 opacity-0 transition-opacity duration-300">
+                    Enhancing Tactile-based RL...
+                </span>
             </div>
             <div class="flex">
                 <a href="https://elle-miller.github.io" class="text-gray-600 hover:text-indigo-600 font-medium px-3 py-2 rounded-md transition duration-150 ease-in-out flex items-center">
@@ -57,7 +60,8 @@
 <section class="py-8 sm:py-16">
     <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center space-y-6">
-            <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight text-gray-900">
+            <!-- Main Title (used to trigger the dynamic navbar title) -->
+            <h1 id="main-title" class="text-4xl sm:text-6xl font-extrabold leading-tight text-gray-900">
                 Enhancing Tactile-based Reinforcement Learning for Robotic Control
             </h1>
             
@@ -74,24 +78,46 @@
                 <p class="text-base text-gray-600">University of Edinburgh</p>
             </div>
 
-            <!-- Publication Links --><div class="flex flex-wrap justify-center gap-4 mt-6">
-                <!-- PDF Link (Pastel Green) --><a href="https://arxiv.org/pdf/2510.21609" class="bg-green-300 hover:bg-green-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+            <!-- Paper Status & Highlights -->
+            <div class="mt-8 p-4 bg-yellow-100/70 backdrop-blur-sm rounded-xl shadow-lg border border-yellow-300/50">
+                <p class="text-lg font-semibold text-gray-800 flex flex-wrap justify-center items-center gap-x-6 gap-y-2">
+                    <span class="text-green-700 font-extrabold"><i class="fas fa-check-circle mr-2"></i> Accepted: NeurIPS 2025</span>
+                    <!-- Updated talk link and text -->
+                    <a href="https://dexterous-humanoid-manipulation.github.io/" target="_blank" class="text-purple-700 font-extrabold hover:underline transition duration-150">
+                        <i class="fas fa-microphone mr-2"></i> Workshop spotlight: Humanoids 2025
+                    </a>
+                </p>
+            </div>
+
+            <!-- Publication Links -->
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+                <!-- PDF Link (Pastel Green) -->
+                <a href="https://arxiv.org/pdf/2510.21609" class="bg-green-300 hover:bg-green-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
                     <i class="fas fa-file-pdf mr-2"></i>
                     <span>Paper</span>
                 </a>
-                <!-- ArXiv Link (Pastel Blue) --><a href="https://arxiv.org/abs/2510.21609" class="bg-blue-300 hover:bg-blue-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+                <!-- ArXiv Link (Pastel Blue) -->
+                <a href="https://arxiv.org/abs/2510.21609" class="bg-blue-300 hover:bg-blue-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
                     <i class="ai ai-arxiv mr-2 text-xl"></i>
                     <span>arXiv</span>
                 </a>
-                <!-- Video Link (Pastel Pink) --><a href="https://elle-miller.github.io/tactile_rl" class="bg-pink-300 hover:bg-pink-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+                <!-- Video Link (Pastel Pink) -->
+                <a href="https://elle-miller.github.io/tactile_rl" class="bg-pink-300 hover:bg-pink-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
                     <i class="fab fa-youtube mr-2"></i>
                     <span>Video</span>
                 </a>
-                <!-- Code Link (Pastel Purple) --><a href="https://github.com/elle-miller/roto" class="bg-purple-300 hover:bg-purple-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+                <!-- Code Link (Pastel Purple) -->
+                <a href="https://github.com/elle-miller/roto" class="bg-purple-300 hover:bg-purple-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
                     <i class="fab fa-github mr-2"></i>
                     <span>Code</span>
                 </a>
-                <!-- Data Link (Pastel Orange) --><a href="https://github.com/elle-miller/roto#data" class="bg-orange-300 hover:bg-orange-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+                <!-- New: Blog Post Link (Indigo) -->
+                <a href="#" class="bg-indigo-300 hover:bg-indigo-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+                    <i class="fas fa-pen-nib mr-2"></i>
+                    <span>Blog Post</span>
+                </a>
+                <!-- Data Link (Pastel Orange) -->
+                <a href="https://github.com/elle-miller/roto#data" class="bg-orange-300 hover:bg-orange-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
                     <i class="far fa-images mr-2"></i>
                     <span>Data</span>
                 </a>
@@ -272,11 +298,53 @@
 
 <footer class="py-6 bg-white/70 backdrop-blur-md mt-8 shadow-inner">
     <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a class="text-gray-500 hover:text-indigo-600 transition duration-150" href="https://arxiv.org/pdf/2510.21609">
+                <i class="fas fa-file-pdf fa-lg"></i>
+            </a>
+            <a class="text-gray-500 hover:text-indigo-600 transition duration-150" href="https://github.com/elle-miller/roto">
+                <i class="fab fa-github fa-lg"></i>
+            </a>
+        </div>
         <p class="text-sm text-gray-600">
             Website template styling inspired by <a href="https://github.com/nerfies/nerfies.github.io" class="text-indigo-600 hover:text-indigo-800 transition duration-150">NeRFies</a>.
         </p>
     </div>
 </footer>
+
+<!-- JavaScript for Dynamic Navbar Title -->
+<script>
+    // Dynamic Navigation Title Logic
+    window.onload = function() {
+        const mainTitle = document.getElementById('main-title');
+        const navTitle = document.getElementById('nav-title');
+
+        if (mainTitle && navTitle) {
+            // Options for the IntersectionObserver
+            const options = {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.0 // trigger when 0% of target is visible
+            };
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    // If the main title is NOT intersecting (i.e., scrolled out of view)
+                    if (!entry.isIntersecting) {
+                        navTitle.classList.remove('opacity-0');
+                        navTitle.classList.add('opacity-100');
+                    } else {
+                        navTitle.classList.remove('opacity-100');
+                        navTitle.classList.add('opacity-0');
+                    }
+                });
+            }, options);
+
+            // Start observing the main title
+            observer.observe(mainTitle);
+        }
+    }
+</script>
 
 </body>
 </html>
