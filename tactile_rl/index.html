@@ -36,6 +36,25 @@
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
     </style>
+
+        <!-- KaTeX CSS -->
+    <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+            integrity="sha384-zDkPp1Z/3Hx8B8eQOxw7CGL3KcQ4e2X0dloWyPjzMxD8oYvM9L+6v9WDUPOV1zYV"
+            crossorigin="anonymous">
+
+    <!-- KaTeX JS -->
+    <script defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+            integrity="sha384-wT9CUpuW+Sx4zYtP7YJpJx5EovZ1MyyFbD0vDtmSRi5qJkqFgKPhk09G+v3X/6E8"
+            crossorigin="anonymous"></script>
+
+    <!-- KaTeX Auto-render Extension -->
+    <script defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+            integrity="sha384-kWPLU1uS+aL53NqBQylzBPuH9b79VajDlH29yUAn1C0tAAGu9qfLq0zjixm6rSGA"
+            crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>
 </head>
 <body class="text-gray-800 antialiased">
 
@@ -205,8 +224,9 @@
                         <source src="./static/videos/baoding/best_ppo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">The standard reinforcement learning approach. Across 5 seeds, the mean and maximum performance
-                        was 5 and 13 rotations. Slowing down to 0.25x speed, the motion is clumsy, with the balls constantly colliding.</p>
+                    <p class="text-gray-600">The agent's observation encoder \(\mathbf{e}\) is trained only with RL losses. Across 5 seeds, the mean and maximum performance
+                        was 5 and 13 rotations. Slowing down to 0.25x speed, it becomes more apparent that the motion is clumsy, with the balls
+                        constantly colliding.</p>
                 </div>
 
                 <!-- Our best agent --><div class="space-y-4">
@@ -215,7 +235,7 @@
                         <source src="./static/videos/baoding/best_dynamics_memory.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">Jointly trained with self-supervised dynamics on a separate auxiliary memory. Across 5 seeds, 
+                    <p class="text-gray-600">The agent's observation encoder \(\mathbf{e}\) is jointly trained with RL losses and a self-supervised dynamics loss. Across 5 seeds, 
                         the mean and maximum performance was 17 and 25 rotations. Using marginal mutual information analysis, we found the learned 
                         representation encoded the xyz ball positions. Slowing down to 0.25x speed, the agent flawlessly manipulates the balls 
                         (except for a small mishap at 00:08), and they never collide. </p>
@@ -312,12 +332,12 @@
                     </div>
                     <!-- UPDATED CAPTION WITH LINK -->
                     <p class="text-gray-600">
-                        The official Guinness World Record for ball bouncing with one hand is 353 bounces in 60 seconds (59 bounces in 10 seconds). 
-                        <a href="https://www.guinnessworldrecords.com/world-records/590513-most-tennis-ball-touches-using-the-hand-in-one-minute" 
+                        The official <a href="https://www.guinnessworldrecords.com/world-records/590513-most-tennis-ball-touches-using-the-hand-in-one-minute" 
                            target="_blank" 
                            class="text-indigo-600 hover:text-indigo-800 font-medium underline transition duration-150">
-                            See the record here.
+                            Guinness World Record
                         </a>
+                        for ball bouncing with one hand is 353 bounces in 60 seconds (59 bounces in 10 seconds). 
                     </p>
                 </div>
 
