@@ -224,7 +224,7 @@
                         <source src="./static/videos/baoding/best_ppo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">The agent's observation encoder \(\mathbf{e}\) is trained only with RL losses. Across 5 seeds, the mean and maximum performance
+                    <p class="text-gray-600">The agent's observation encoder is trained only with RL losses. Across 5 seeds, the mean and maximum performance
                         was 5 and 13 rotations. Slowing down to 0.25x speed, it becomes more apparent that the motion is clumsy, with the balls
                         constantly colliding.</p>
                 </div>
@@ -235,7 +235,7 @@
                         <source src="./static/videos/baoding/best_dynamics_memory.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">The agent's observation encoder \(\mathbf{e}\) is jointly trained with RL losses and a self-supervised dynamics loss. Across 5 seeds, 
+                    <p class="text-gray-600">The agent's observation encoder is jointly trained with RL losses and a self-supervised dynamics loss. Across 5 seeds, 
                         the mean and maximum performance was 17 and 25 rotations. Using marginal mutual information analysis, we found the learned 
                         representation encoded the xyz ball positions. Slowing down to 0.25x speed, the agent flawlessly manipulates the balls 
                         (except for a small mishap at 00:08), and they never collide. </p>
@@ -257,7 +257,7 @@
                         <source src="./static/videos/bounce/best_ppo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">The standard reinforcement learning approach. Across 5 seeds, the mean and maximum performance
+                    <p class="text-gray-600">The agent's observation encoder is trained only with RL losses. Across 5 seeds, the mean and maximum performance
                         was 69 and 77 bounces. The agent plays it safe, keeping the ball secure between the index and pinky finger.</p>
                 </div>
                 <!-- Our Dynamics Agent Column -->
@@ -267,8 +267,8 @@
                         <source src="./static/videos/bounce/best_dynamics.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">Jointly trained with self-supervised dynamics. Across 5 seeds, 
-                        the mean and maximum performance was 79 and 88 bounces. Compared to the baseline, 
+                    <p class="text-gray-600">The agent's observation encoder is jointly trained with RL losses and a self-supervised dynamics loss.
+                         Across 5 seeds, the mean and maximum performance was 79 and 88 bounces. Compared to the baseline, 
                         this agent utilises its full body to control the ball. Using marginal mutual information
                          analysis, we found the learned representation encoded the ball x,z position and vertical velocity. </p>
                 </div>
@@ -289,7 +289,7 @@
                         <source src="./static/videos/find/best_ppo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">The standard reinforcement learning approach. Across 5 seeds, the mean and maximum performance
+                    <p class="text-gray-600">The agent's observation encoder is trained only with RL losses. Across 5 seeds, the mean and maximum performance
                         was 1.9 and 1.7 seconds to find the object. The agent learns a tilting motion to increase the probability of collision,
                         since it relies moreso on proprioceptive control errors for locating the object. However, even after finding the object,
                         the agent struggles to stay there.</p>
@@ -301,9 +301,9 @@
                         <source src="./static/videos/find/best_dynamics.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-gray-600">Jointly trained with self-supervised dynamics. Across 5 seeds, the mean and maximum performance
-                        was 1.4 and 1.2 seconds to find the object. The agent relies moreso on its tactile sensing, finding the object and 
-                        staying there.</p>
+                    <p class="text-gray-600">The agent's observation encoder is jointly trained with RL losses and a self-supervised dynamics loss. 
+                        Across 5 seeds, the mean and maximum performance was 1.4 and 1.2 seconds to find the object. The agent appears to use its
+                        tactile sensing more effectively to localise the object, and once found, can reliably maintain contact.</p>
                 </div>
             </div>
         </div>
@@ -331,13 +331,11 @@
                         </iframe>
                     </div>
                     <!-- UPDATED CAPTION WITH LINK -->
-                    <p class="text-gray-600">
-                        The official <a href="https://www.guinnessworldrecords.com/world-records/590513-most-tennis-ball-touches-using-the-hand-in-one-minute" 
+                    <p class="text-gray-600">The official <a href="https://www.guinnessworldrecords.com/world-records/590513-most-tennis-ball-touches-using-the-hand-in-one-minute" 
                            target="_blank" 
                            class="text-indigo-600 hover:text-indigo-800 font-medium underline transition duration-150">
-                            Guinness World Record
-                        </a>
-                        for ball bouncing with one hand is 353 bounces in 60 seconds (59 bounces in 10 seconds). 
+                           Guinness World Record
+                        </a> for ball bouncing with one hand is 353 bounces in 60 seconds (59 bounces in 10 seconds). 
                     </p>
                 </div>
 
