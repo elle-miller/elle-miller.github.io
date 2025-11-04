@@ -6,7 +6,17 @@ tags: rl tactile dexterity ssl
 giscus_comments: true
 date: 2025-11-04
 featured: true
-
+mermaid:
+  enabled: true
+  zoomable: true
+code_diff: true
+map: true
+chart:
+  chartjs: true
+  echarts: true
+  vega_lite: true
+tikzjax: true
+typograms: true
 authors:
   - name: Elle Miller
 
