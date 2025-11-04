@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Enhancing Tactile-based Reinforcement Learning for Robotic Control">
+  <meta name="keywords" content="Reinforcement learning, representation learning, tactile sensing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhancing Tactile-based Reinforcement Learning for Robotic Control</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://elle-miller.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Enhancing Tactile-based Reinforcement Learning for Robotic Control</h1>
+<div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://elle-miller.github.io">Elle Miller</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://trevormcinroe.github.io/">Trevor McInroe</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://david-abel.github.io/">David Abel</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://homepages.inf.ed.ac.uk/omacaod/">Oisin Mac Aodha</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://homepages.inf.ed.ac.uk/svijayak/">Sethu Vijayakumar</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Edinburgh,</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2510.21609"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2510.21609"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://elle-miller.github.io/tactile_rl"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/elle-miller/roto"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/elle-miller/roto#data"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+<!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Links</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            TLDR;
+            1. Superhuman dexterity is possible with only proprioception and sparse binary contacts.
+            2. Tactile sensing can provide distinct benefits over proprioceptive histories in specific scenarios.
+            3. Self-supervised learning (SSL) is an effective solution for the representation problem in RL for sensory-based agents.
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Achieving safe, reliable real-world robotic manipulation requires agents to evolve
+            beyond vision and incorporate tactile sensing to overcome sensory deficits and
+            reliance on idealised state information. Despite its potential, the efficacy of tactile
+            sensing in reinforcement learning (RL) remains inconsistent. 
+            </p>
+            <p>
+            We address this
+            by developing self-supervised learning (SSL) methodologies to more effectively
+            harness tactile observations, focusing on a scalable setup of proprioception and
+            sparse binary contacts. We empirically demonstrate that sparse binary tactile
+            signals are critical for dexterity, particularly for interactions that proprioceptive
+            control errors do not register, such as decoupled robot-object motions. 
+            
+            </p>
+            <p>
+            Our agents achieve superhuman dexterity in complex contact tasks (ball bouncing and Baoding
+            ball rotation). Furthermore, we find that decoupling the SSL memory from the onpolicy
+            memory can improve performance. We release the Robot Tactile Olympiad (RoTO) benchmark to 
+            standardise and promote future research in tactile-based manipulation         
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Best PPO agent</h2>
+          <p>
+            Trained end-to-end
+          </p>
+          <video id="manual" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/baoding/best_ppo.mp4"
+                    type="video/mp4">
+          </video>
+          <script>
+            const video = document.getElementById("shared");
+            video.playbackRate = 0.5;
+          </script>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3">Our best agent</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Trained with self-supervised dynamics + an auxiliary memory
+            </p>
+            <video id="shared" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/baoding/best_dynamics_memory.mp4"
+                      type="video/mp4">
+            </video>
+            <script>
+              const video = document.getElementById("shared");
+              video.playbackRate = 0.5;
+            </script>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Best PPO agent</h2>
+          <p>
+            Trained end-to-end
+          </p>
+          <video id="manual" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/bounce/best_ppo.mp4"
+                    type="video/mp4">
+          </video>
+          <script>
+            const video = document.getElementById("shared");
+            video.playbackRate = 0.5;
+          </script>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3">Our best agent</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Trained with self-supervised dynamics
+            </p>
+            <video id="shared" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/bounce/best_dynamics.mp4"
+                      type="video/mp4">
+            </video>
+            <script>
+              const video = document.getElementById("shared");
+              video.playbackRate = 0.5;
+            </script>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Best PPO agent</h2>
+          <p>
+            Trained end-to-en
+          </p>
+          <video id="manual" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/find/best_ppo.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3">Our best agent</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Trained with self-supervised dynamics
+            </p>
+            <video id="shared" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/find/best_dynamics.mp4"
+                      type="video/mp4">
+            </video>
+
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@@inproceedings{miller2025tactilerl,
+  author    = {Miller, Elle and McInroe, Trevor and Abel, David and Mac Aodha, Oisin and Vijayakumar, Sethu},
+  title     = {Enhancing Tactile-based Reinforcement Learning for Robotic Control},
+  journal   = {NeurIPS},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+ 
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
