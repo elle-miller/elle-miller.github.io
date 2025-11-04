@@ -17,8 +17,12 @@ chart:
   vega_lite: true
 tikzjax: true
 typograms: true
+
 authors:
   - name: Elle Miller
+    url: "https://en.wikipedia.org/wiki/Albert_Einstein"
+    affiliations:
+      name: IAS, Princeton
 
 bibliography: 2025-11-04-tactilerl.bib
 
