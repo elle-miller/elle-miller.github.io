@@ -20,10 +20,12 @@ bibliography: 2025-11-04-tactilerl.bib
 #   - we may want to automate TOC generation in the future using
 #     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
 toc:
-  - name: Part 1: Human Side to the Research
+  - name: Part 1: Origins
     # if a section has subsections, you can add them as follows:
     subsections:
-      - name: Why Study Tactile RL?
+      - name: Why I'm betting my PhD on touch
+      - name: I'd rather go blind
+      - name: At last
 
 # Below is an example of injecting additional post-specific styles.
 # If you use this post as a template, delete this _styles block.
@@ -44,13 +46,13 @@ _styles: >
   }
 ---
 
-The purpose of this blog post is three-fold: to chat about the **major findings** (including some interpretations too uncertain for the paper), to share the **human side** of the story, because our brains work in narratives, and to highlight the most important **lessons** I learned about doing useful RL research.
+The purpose of this blog post is three-fold: to share the **human side** of the story (because our brains work in narratives), to chat about the **major findings** (including some interpretations too uncertain for the paper), and to highlight the most important **lessons** I learned about doing useful RL research.
 
 Let’s go!
 
-# Part 1: Human Side to the Research
+# Part 1: Origins
 
-## Why Study Tactile RL?
+## Why I'm betting my PhD on touch
 
 This research kicked off my journey into Reinforcement Learning (RL) as a first-year PhD student. My background was all over the place: assistive robotics (DLR), semantic perception (JPL), and even astrophysics. I had *zero* prior experience in RL, but I thought it was the most compelling form of robot learning, so I was determined to study it.
 
