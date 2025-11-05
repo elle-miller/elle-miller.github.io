@@ -3,7 +3,6 @@ layout: distill
 title: The Super-Human Touch: An RL Research Story 
 description: The story of my first PhD publication
 tags: rl tactile dexterity ssl
-giscus_comments: true
 date: 2023-11-04 # Make sure it's in the past
 featured: true
 authors:
