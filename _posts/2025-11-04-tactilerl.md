@@ -4,27 +4,15 @@ title: The Super-Human Touch: An RL Research Story
 description: The story of my first PhD publication
 tags: rl tactile dexterity ssl
 giscus_comments: true
-date: 2025-11-04
+date: 2023-11-04 # Make sure it's in the past
 featured: true
-mermaid:
-  enabled: true
-  zoomable: true
-code_diff: true
-map: true
-chart:
-  chartjs: true
-  echarts: true
-  vega_lite: true
-tikzjax: true
-typograms: true
-
 authors:
   - name: Elle Miller
     url: "https://en.wikipedia.org/wiki/Albert_Einstein"
     affiliations:
       name: IAS, Princeton
-
 bibliography: 2025-11-04-tactilerl.bib
+
 
 # Optionally, you can add a table of contents to your post.
 # NOTES:
@@ -33,17 +21,10 @@ bibliography: 2025-11-04-tactilerl.bib
 #   - we may want to automate TOC generation in the future using
 #     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
 toc:
-  - name: Equations
+  - name: Part 1: Human Side to the Research
     # if a section has subsections, you can add them as follows:
     subsections:
-      - name: Example Child Subsection 1
-      - name: Example Child Subsection 2
-  - name: Citations
-  - name: Footnotes
-  - name: Code Blocks
-  - name: Interactive Plots
-  - name: Layouts
-  - name: Other Typography?
+      - name: Why Study Tactile RL?
 
 # Below is an example of injecting additional post-specific styles.
 # If you use this post as a template, delete this _styles block.
@@ -68,9 +49,9 @@ The purpose of this blog post is three-fold: to chat about the **major findings*
 
 Let’s go!
 
-## Part 1: Human Side to the Research
+# Part 1: Human Side to the Research
 
-### 1.1 Why Study Tactile RL?
+## Why Study Tactile RL?
 
 This research kicked off my journey into Reinforcement Learning (RL) as a first-year PhD student. My background was all over the place: assistive robotics (DLR), semantic perception (JPL), and even astrophysics. I had *zero* prior experience in RL, but I thought it was the most compelling form of robot learning, so I was determined to study it.
 
