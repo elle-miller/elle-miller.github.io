@@ -54,23 +54,9 @@ Let’s go!
 
 ## Why I'm betting my PhD on touch
 
-This research kicked off my journey into Reinforcement Learning (RL) as a first-year PhD student. My background was all over the place: assistive robotics (DLR), semantic perception (JPL), and even astrophysics. I had *zero* prior experience in RL, but I thought it was the most compelling form of robot learning, so I was determined to study it.
+## I'd rather go blind
 
-I was immediately drawn to learning from **tactile feedback** because of the ultimate goal I had in mind: **physical human-robot interaction**. My interest in robotics stems from the belief that they can dramatically improve the quality of life for many people as physical assistants (less so to just do my laundry, though that’d be nice).
-
-However, being up close with full-size robots was quite scary for me; it took some serious getting used to. This is me in 2022 as a Bachelors student, pretty terrified to go near the robot and standing way out of the way…
-
-
-I was comfortable with this robot (named AIREC) lifting me up because it was controlled with **impedance control**. That means it could actually modulate its motion based on the torques placed on the joints. **AKA, it could feel me.**
-
-However, most robots who learn policies with RL cannot “feel”. They're typically controlled via joint position commands (**position control**). For observations, they know where their body is (**proprioception**), and they might be given the exact pose of the object (**ground-truth information**) or a camera stream (**vision**).
-
-For instance, one of the biggest and most cited works in RL for manipulation—from OpenAI in 2020 <d-cite key="openai2018learning"></d-cite> —made a very specific design choice. To quote the paper:
-
-> “We give the control policy observations of the fingertips using PhaseSpace markers and the object pose either from PhaseSpace markers or > the vision based pose estimator. Although the Shadow Dexterous Hand contains a broad array of built-in sensors, we specifically avoided 
-> providing these as observations to the policy because they are subject to state-dependent noise that would have been difficult to model in > the simulator.”
-
-
+## At last
 
 <!-- 
 Colons can be used to align columns.
