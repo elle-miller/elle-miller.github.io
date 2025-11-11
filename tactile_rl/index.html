@@ -209,8 +209,9 @@
                          class="w-full h-auto rounded-lg"
                          onerror="this.onerror=null; this.src='https://placehold.co/800x450/e0e7ff/6366f1?text=Method+Diagram+Figure+Missing'">
                     <p class="mt-3 text-lg font-medium text-indigo-800">Figure 1: Method overview. By jointly training the 
-                        observation encoder with self-supervision, the agent transforms complex sensory input into representations that capture 
-                        object positions and velocities.</p>
+                        observation encoder with self-supervision, the agent recieves an additional signal to help transform complex sensory input
+                        into a representation useful for control. We propose and analyse 4 SSL objectives, and find multi-step forward dynamics in 
+                        the latent space to be most effective for our tactile-based agents, successfully encoding object positions and velocities.</p>
                 </div>
             </div>
         </div>
