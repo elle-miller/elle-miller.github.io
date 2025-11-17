@@ -414,7 +414,13 @@
                 <div class="bg-white p-8 rounded-3xl shadow-xl h-full">                    
                     <!-- Responsive Video Embed Wrapper (Ensures 16:9 Aspect Ratio) -->
                     <div class="relative overflow-hidden w-full" style="padding-top: 56.25%">
-                        <iframe width="1333" height="750" src="https://www.youtube.com/embed/DdqDxmn0qqs" title="Enhancing Tactile-based Reinforcement Learning for Robotic Control (NeurIPS 2025)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="absolute top-0 left-0 w-full h-full rounded-lg"
+                                src="https://www.youtube.com/embed/DdqDxmn0qqs"
+                                title="Enhancing Tactile-based Reinforcement Learning for Robotic Control (NeurIPS 2025)"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -450,17 +456,17 @@
             
             <!-- Title and Description -->
             <h2 class="text-3xl font-extrabold text-gray-800 mb-2 border-b-2 border-indigo-600 pb-2">
-                The Lab Adventures
+                The Adventures of Roto
             </h2>
             <p class="text-gray-600 mb-6 leading-relaxed">
-                Click the comic image to view it full screen.
+                Tired of dense academic papers? We get it. That's why we created this comic to translate the story of the paper into plain languague.
             </p>
 
             <!-- Main Display Area (Clickable) -->
             <!-- The 'cursor-pointer' class indicates interactivity -->
             <div class="cursor-pointer rounded-xl shadow-lg border-2 border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img id="main-comic-image" 
-                     src="./static/images/method_new.png" 
+                     src="./static/images/comic.png" 
                      alt="The Lab Adventures of Roto-Bot" 
                      class="w-full h-auto object-contain">
             </div>
