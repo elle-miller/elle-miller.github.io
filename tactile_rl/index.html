@@ -444,7 +444,91 @@
     </div>
 </section>
 
+<section class="py-8">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="comic-container" class="bg-white p-6 md:p-8 rounded-3xl shadow-2xl mx-auto w-full max-w-4xl">
+            
+            <!-- Title and Description -->
+            <h2 class="text-3xl font-extrabold text-gray-800 mb-2 border-b-2 border-indigo-600 pb-2">
+                The Lab Adventures
+            </h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+                Click the comic image to view it full screen.
+            </p>
 
+            <!-- Main Display Area (Clickable) -->
+            <!-- The 'cursor-pointer' class indicates interactivity -->
+            <div class="cursor-pointer rounded-xl shadow-lg border-2 border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img id="main-comic-image" 
+                     src="./static/images/method_new.png" 
+                     alt="The Lab Adventures of Roto-Bot" 
+                     class="w-full h-auto object-contain">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Full Screen Modal/Lightbox -->
+<!-- Fixed position, high z-index, initially hidden (opacity-0, pointer-events-none) -->
+<div id="lightbox-modal" class="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300" onclick="closeModal()">
+    
+    <!-- Close Button (X) -->
+    <button onclick="closeModal(event)" class="absolute top-4 right-6 text-white text-4xl font-light opacity-80 hover:opacity-100 transition-opacity focus:outline-none z-50">
+        &times;
+    </button>
+    
+    <!-- Image inside the modal (prevents closing if the image itself is clicked) -->
+    <img id="modal-image" 
+         src="" 
+         alt="Full Screen Comic" 
+         class="max-w-[95%] max-h-[95%] p-4"
+         onclick="event.stopPropagation()">
+</div>
+
+<script>
+    // JavaScript for Lightbox/Modal functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const mainImage = document.getElementById('main-comic-image');
+        const modal = document.getElementById('lightbox-modal');
+        const modalImage = document.getElementById('modal-image');
+
+        // Function to open the modal
+        function openModal() {
+            // Set the modal image source to the main image source
+            modalImage.src = mainImage.src; 
+            
+            // Show the modal by adjusting opacity and pointer events
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modal.classList.add('opacity-100');
+            // Hide body scrollbar to prevent scrolling behind the modal
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Function to close the modal (made global via window for the inline onclick handler)
+        window.closeModal = function(event) {
+            // Stop propagation if the event object exists (prevents closing if image is clicked)
+            if (event) {
+                event.stopPropagation();
+            }
+            
+            // Hide the modal
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            // Restore body scrollbar
+            document.body.style.overflow = '';
+        }
+
+        // Event listener on the main image to open the modal
+        mainImage.addEventListener('click', openModal);
+
+        // Optional: Close modal with the ESC key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && modal.classList.contains('opacity-100')) {
+                closeModal();
+            }
+        });
+    });
+</script>
 
 
 <footer class="py-6 bg-white/70 backdrop-blur-md mt-8 shadow-inner">
