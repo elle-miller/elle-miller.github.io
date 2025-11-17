@@ -382,12 +382,52 @@
         </div>
     </div>
 </section>
-
+<!-- 
 <section class="py-8">
     <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-white p-8 rounded-3xl shadow-xl max-w-lg mx-auto">
             <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=BW-uKoHVbRL2q2hqhlx7yLdPq8Xih8-7v2XE5gRjDRo&cl=ffffff&w=a"></script>
             <p style="text-align: center; font-size: 0.9em; margin-top: 5px; color: #666;">Visitors around the world</p>
+        </div>
+    </div>
+</section> -->
+
+<section class="py-8">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- NEW FLEX CONTAINER: Stacks vertically (flex-col) until medium breakpoint (md:flex-row) -->
+        <div class="flex flex-col md:flex-row gap-8">
+            
+            <!-- BLOCK 1: VISITOR MAP (50% width on medium screens and up) -->
+            <div class="w-full md:w-1/2">
+                <!-- Added 'h-full' to stretch container to match video height, if necessary -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl h-full flex flex-col items-center">
+                    
+                    <!-- The MapMyVisitors element -->
+                    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=BW-uKoHVbRL2q2hqhlx7yLdPq8Xih8-7v2XE5gRjDRo&cl=ffffff&w=a"></script>
+                    
+                    <p style="text-align: center; font-size: 0.9em; margin-top: 5px; color: #666;">Visitors around the world</p>
+                </div>
+            </div>
+            
+            <!-- BLOCK 2: YOUTUBE VIDEO (50% width on medium screens and up) -->
+            <div class="w-full md:w-1/2">
+                <div class="bg-white p-8 rounded-3xl shadow-xl h-full">
+                    <h3 class="text-xl font-bold mb-4">Video Demo</h3>
+                    
+                    <!-- Responsive Video Embed Wrapper (Ensures 16:9 Aspect Ratio) -->
+                    <div class="relative overflow-hidden w-full" style="padding-top: 56.25%">
+                        <!-- Replace YOUTUBE_VIDEO_ID with your actual video ID -->
+                        <iframe class="absolute top-0 left-0 w-full h-full rounded-lg"
+                                src="https://www.youtube.com/watch?v=DdqDxmn0qqs"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
