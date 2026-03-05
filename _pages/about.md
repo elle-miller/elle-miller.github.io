@@ -21,7 +21,7 @@ social: false # includes social icons at the bottom of the page
 
 Hi there! I’m Elle, a PhD student at the University of Edinburgh. My goal is to develop intelligent robots that empower people and solve complex real-world problems.
 
-My research lies at the intersection of reinforcement learning and robotic control, with a focus on contact-rich manipulation. My work leverages tactile feedback and self-supervision to help agents derive richer latent representations of their physical world. Currently, I am looking into longstanding challenges of RL for whole-body humanoid manipulation. 
+My research lies at the intersection of **reinforcement learning** and robotic control, with a focus on **contact-rich manipulation**. My work leverages **tactile sensing** and **self-supervision** to help agents derive richer latent representations of their physical world. Currently, I am looking into longstanding challenges of RL for whole-body humanoid manipulation. 
 
 I am fortunate to be supervised by a great interdisciplinary team: [Prof. Sethu Vijayakumar](https://web.inf.ed.ac.uk/slmc) (UoE), [Associate Prof. Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod/) (UoE),  [Associate Prof. Rika Antonova](https://contactrika.github.io/) (University of Cambridge), and [Dr. David Abel](https://david-abel.github.io/) (UoE, DeepMind).
 
@@ -54,7 +54,7 @@ On a personal note, I enjoy tea, jazz music, cinema, and meeting people from aro
   </swiper-slide>
   <swiper-slide>
     <img src="{{ 'assets/img/valkyrie2.png' | relative_url }}" alt="Valkyrie" class="img-fluid rounded z-depth-1" loading="eager">
-    <div class="slide-caption">NASA's Valkyrie, which was on lease to researchers at Uni of Edinburgh for 10 years. </div>
+    <div class="slide-caption">NASA's Valkyrie, built in 2015. She was on lease to researchers at Uni of Edinburgh for 10 years.</div>
   </swiper-slide>
   <swiper-slide>
     <img src="{{ 'assets/img/edan2.jpeg' | relative_url }}" alt="EDAN" class="img-fluid rounded z-depth-1" loading="lazy">
@@ -62,11 +62,11 @@ On a personal note, I enjoy tea, jazz music, cinema, and meeting people from aro
   </swiper-slide>
   <swiper-slide>
     <img src="{{ 'assets/img/eva.png' | relative_url }}" alt="EVA" class="img-fluid rounded z-depth-1" loading="eager">
-    <div class="slide-caption">SLMC's EVA. This is my lab's hybrid mobile humanoid platform. We made it by putting together a Nextage humanoid torso (Kawada) with an omnidirectional base!</div>
+    <div class="slide-caption">SLMC's EVA. This is a hybrid mobile humanoid platform we made  by integrating a Nextage robot (Kawada) with an omnidirectional base.</div>
   </swiper-slide>
   <swiper-slide>
     <img src="{{ 'assets/img/justin.jpeg' | relative_url }}" alt="Justin" class="img-fluid rounded z-depth-1" loading="lazy">
-    <div class="slide-caption">DLR's "Rollin' Justin". DLR (German Aerospace Center) make their own robots from scratch, so each robot is a one-of-kind.</div>
+    <div class="slide-caption">Meet "Rollin' Justin". DLR (German Aerospace Center) make their own robots from scratch, so each robot is a one-of-kind.</div>
   </swiper-slide>
   <swiper-slide>
     <img src="{{ 'assets/img/mars.jpg' | relative_url }}" alt="Perseverance & Ingenuity" class="img-fluid rounded z-depth-1" loading="lazy">
