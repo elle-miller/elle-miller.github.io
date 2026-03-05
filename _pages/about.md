@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-Hi there! I’m Elle, a PhD student at the University of Edinburgh. My goal is to develop intelligent robots that empower people and solve complex real-world problems.
+Hi there! I’m Elle, a PhD student at the **University of Edinburgh**. My goal is to develop intelligent robots that **empower people** and solve complex real-world problems.
 
 My research lies at the intersection of **reinforcement learning** and robotic control, with a focus on **contact-rich manipulation**. My work leverages **tactile sensing** and **self-supervision** to help agents derive richer latent representations of their physical world. Currently, I am looking into longstanding challenges of RL for whole-body humanoid manipulation. 
 
