@@ -295,10 +295,10 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
-  .navbar-brand.social {
-    padding-bottom: 0;
-    padding-top: 0;
-    font-size: 1.7rem;
+  .navbar-social-icons .social {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
 
     a {
       i::before {
