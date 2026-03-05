@@ -19,23 +19,33 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-Hi there! I’m Elle, a **third year PhD student** at the University of Edinburgh.
+Hi there! I’m Elle, a PhD student at the University of Edinburgh. My goal is to develop intelligent robots that empower people and solve complex real-world problems.
 
-I’m interested in generalisable methods for improving the performance of robotic reinforcement learning agents in contact-rich manipulation, with a focus on tactile sensing. I'm planning on applying my research to a wide range of scenarios, from dexterous manipulation to humanoid physical assistance in healthcare.
+My research lies at the intersection of reinforcement learning and robotic control, with a focus on contact-rich manipulation. My work leverages tactile feedback and self-supervision to help agents derive richer latent representations of their physical world. Currently, I am looking into longstanding challenges of RL for whole-body humanoid manipulation. 
 
-I am fortunate to have an awesome PhD supervision team: [Prof. Sethu Vijayakumar](https://web.inf.ed.ac.uk/slmc) (UoE), [Associate Prof. Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod/) (UoE), [Dr. David Abel](https://david-abel.github.io/) (UoE, DeepMind), and [Associate Prof. Rika Antonova](https://contactrika.github.io/) (University of Cambridge).
+I am fortunate to be supervised by a great interdisciplinary team: [Prof. Sethu Vijayakumar](https://web.inf.ed.ac.uk/slmc) (UoE), [Associate Prof. Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod/) (UoE),  [Associate Prof. Rika Antonova](https://contactrika.github.io/) (University of Cambridge), and [Dr. David Abel](https://david-abel.github.io/) (UoE, DeepMind).
 
-Prior to my doctorate I worked for **NASA Jet Propulsion Laboratory (JPL)** and the **DLR Institute for Mechatronics and Robotics**. At NASA I researched semantic perception for robotic autonomy in hazardous environments, while at DLR I worked improving user agency in grasping on the  inspiring assistive robotics system [EDAN](https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-11670). Along the way I also helped create a mobile humanoid robot called [EVA](https://youtu.be/nMkcBbofDY0).
+Before my doctorate, I researched robotic autonomy at **NASA Jet Propulsion Laboratory (JPL)** and assistive grasping at the **DLR Institute for Mechatronics and Robotics**. I also helped create [EVA](https://youtu.be/nMkcBbofDY0), a novel mobile humanoid. My journey began at the **University of Sydney**, where I graduated with First Class Honours in Mechatronic (Space) Engineering and Advanced Physics.
 
-I graduated with First Class Honours in a BEng (Mechatronic (Space)) & BSc (Advanced Physics) from the **University of Sydney** in 2023. As an undergraduate, I undertook several internships in parallel with my studies, working with the **Max Planck Institute of Astronomy**, **University of Cambridge**, **Cochlear**, **Australian National University**, and **Saber Astronautics**.
+Along the way, I've understook internships with **Max Planck Institute of Astronomy**, **Cochlear**, **Australian National University**, and **Saber Astronautics**.
 
-
-On a personal note, I enjoy playing and making music, film photography, lindy hop, cinema, and living in different cities. Feel free to get in touch 💌
+On a personal note, I enjoy tea, jazz music, cinema, and meeting people from around the world. Feel free to get in touch 💌
 
 <style>
-.robot-carousel swiper-slide { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.profile .more-info { text-align: center; }
+.robot-carousel swiper-slide { display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 2.5rem; }
 .robot-carousel img { max-height: 400px; object-fit: contain; }
-.robot-carousel .slide-caption { margin-top: 0.5rem; font-size: 0.9rem; color: var(--global-text-color-light); text-align: center; }
+.robot-carousel .slide-caption {
+  margin-top: 0.75rem;
+  padding: 0.6rem 1rem;
+  background: var(--global-card-bg-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  font-size: 1rem;
+  color: var(--global-text-color);
+  text-align: center;
+  max-width: 100%;
+}
 </style>
 <swiper-container slides-per-view="1" loop="true" pagination="true" navigation="true" class="robot-carousel mt-3">
   <swiper-slide>
@@ -44,23 +54,23 @@ On a personal note, I enjoy playing and making music, film photography, lindy ho
   </swiper-slide>
   <swiper-slide>
     <img src="{{ 'assets/img/valkyrie2.png' | relative_url }}" alt="Valkyrie" class="img-fluid rounded z-depth-1" loading="eager">
-    <div class="slide-caption">NASA Valkyrie</div>
+    <div class="slide-caption">NASA's Valkyrie, which was on lease to researchers at Uni of Edinburgh for 10 years. </div>
   </swiper-slide>
   <swiper-slide>
     <img src="{{ 'assets/img/edan2.jpeg' | relative_url }}" alt="EDAN" class="img-fluid rounded z-depth-1" loading="lazy">
-    <div class="slide-caption">DLR EDAN</div>
+    <div class="slide-caption">DLR's EDAN. This is robotic wheelchair + arm designed to help people with motor impairments carry out everyday tasks. </div>
   </swiper-slide>
   <swiper-slide>
     <img src="{{ 'assets/img/eva.png' | relative_url }}" alt="EVA" class="img-fluid rounded z-depth-1" loading="eager">
-    <div class="slide-caption">SLMC EVA</div>
+    <div class="slide-caption">SLMC's EVA. This is my lab's hybrid mobile humanoid platform. We made it by putting together a Nextage humanoid torso (Kawada) with an omnidirectional base!</div>
   </swiper-slide>
   <swiper-slide>
     <img src="{{ 'assets/img/justin.jpeg' | relative_url }}" alt="Justin" class="img-fluid rounded z-depth-1" loading="lazy">
-    <div class="slide-caption">DLR Justin</div>
+    <div class="slide-caption">DLR's "Rollin' Justin". DLR (German Aerospace Center) make their own robots from scratch, so each robot is a one-of-kind.</div>
   </swiper-slide>
   <swiper-slide>
     <img src="{{ 'assets/img/mars.jpg' | relative_url }}" alt="Perseverance & Ingenuity" class="img-fluid rounded z-depth-1" loading="lazy">
-    <div class="slide-caption">NASA Perseverance & Ingenuity</div>
+    <div class="slide-caption">NASA's Perseverance & Ingenuity (just models, since they are on Mars! Each rover does have a twin though, that is used for debugging.)</div>
   </swiper-slide>
 </swiper-container>
 
