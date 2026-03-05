@@ -4,6 +4,9 @@ title: about
 permalink: /
 subtitle:
 
+images:
+  slider: true
+
 profile:
   align: right
   image: nasa_website.jpeg
@@ -29,25 +32,27 @@ I graduated with First Class Honours in a BEng (Mechatronic (Space)) & BSc (Adva
 
 On a personal note, I enjoy playing and making music, film photography, lindy hop, cinema, and living in different cities. Feel free to get in touch 💌
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/eva.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/edan.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/justin.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mars.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+<style>
+.robot-carousel swiper-slide { display: flex; justify-content: center; align-items: center; }
+.robot-carousel img { max-height: 400px; object-fit: contain; }
+</style>
+<swiper-container slides-per-view="1" loop="true" pagination="true" navigation="true" class="robot-carousel mt-3">
+  <swiper-slide>
+    <img src="{{ 'assets/img/eva.png' | relative_url }}" alt="EVA" class="img-fluid rounded z-depth-1" loading="eager">
+  </swiper-slide>
+  <swiper-slide>
+    <img src="{{ 'assets/img/edan.jpg' | relative_url }}" alt="EDAN" class="img-fluid rounded z-depth-1" loading="lazy">
+  </swiper-slide>
+  <swiper-slide>
+    <img src="{{ 'assets/img/justin.jpeg' | relative_url }}" alt="Justin" class="img-fluid rounded z-depth-1" loading="lazy">
+  </swiper-slide>
+  <swiper-slide>
+    <img src="{{ 'assets/img/mars.jpg' | relative_url }}" alt="Perseverance & Ingenuity" class="img-fluid rounded z-depth-1" loading="lazy">
+  </swiper-slide>
+</swiper-container>
 
 <div class="caption">
-    Memorable colleagues (clockwise): SLMC's EVA, DLR's EDAN & Justin, and NASA's Perseverance & Ingenuity.
+  Memorable colleagues: SLMC's EVA, DLR's EDAN & Justin, and NASA's Perseverance & Ingenuity.
 </div>
 
 <!-- <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=G3JqO2IkDumQbXPCgL1ii_R51Ml__n42MQd4Bkg71XQ&cl=ffffff&w=a"></script> -->
