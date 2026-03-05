@@ -12,6 +12,7 @@ profile:
   image: nasa_website.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
+    <a href="mailto:elle.miller@ed.ac.uk">elle.miller@ed.ac.uk</a>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
