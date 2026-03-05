@@ -294,8 +294,8 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Miller]
+  first_name: [Elle]
 
   style: apa
   locale: en
@@ -315,7 +315,7 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: year
+  group_by: author_role
   group_order: descending
 
 # Display different badges withs stats for your publications
@@ -328,6 +328,7 @@ enable_publication_badges:
 filtered_bibtex_keywords:
   [
     abbr,
+    author_role,
     abstract,
     additional_info,
     altmetric,
