@@ -23,7 +23,7 @@ Hi there! I’m Elle, a PhD student at the **University of Edinburgh**. My goal 
 
 My research lies at the intersection of **reinforcement learning** and robotic control, with a focus on **contact-rich manipulation**. My work leverages **tactile sensing** and **self-supervision** to help agents derive richer latent representations of their physical world. Currently, I am looking into longstanding challenges of RL for whole-body humanoid manipulation. 
 
-I am fortunate to be supervised by a great interdisciplinary team: [Prof. Sethu Vijayakumar](https://web.inf.ed.ac.uk/slmc) (UoE), [Associate Prof. Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod/) (UoE),  [Associate Prof. Rika Antonova](https://contactrika.github.io/) (University of Cambridge), and [Dr. David Abel](https://david-abel.github.io/) (UoE, DeepMind).
+I am fortunate to be supervised by a great interdisciplinary team: [Sethu Vijayakumar](https://web.inf.ed.ac.uk/slmc) (UoE), [Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod/) (UoE),  [Rika Antonova](https://contactrika.github.io/) (University of Cambridge), and [David Abel](https://david-abel.github.io/) (UoE, DeepMind).
 
 Before my doctorate, I researched robotic autonomy at **NASA Jet Propulsion Laboratory (JPL)** and assistive grasping at the **DLR Institute for Mechatronics and Robotics**. I also helped create [EVA](https://youtu.be/nMkcBbofDY0), a novel mobile humanoid. My journey began at the **University of Sydney**, where I graduated with First Class Honours in Mechatronic (Space) Engineering and Advanced Physics.
 
