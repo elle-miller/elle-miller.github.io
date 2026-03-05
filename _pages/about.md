@@ -12,7 +12,7 @@ profile:
   image: nasa_website.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <a href="mailto:elle.miller@ed.ac.uk">elle.miller@ed.ac.uk</a>
+    <strong style="color: black;">elle.miller@ed.ac.uk</strong>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -39,10 +39,16 @@ On a personal note, I enjoy playing and making music, film photography, lindy ho
 </style>
 <swiper-container slides-per-view="1" loop="true" pagination="true" navigation="true" class="robot-carousel mt-3">
   <swiper-slide>
-    <img src="{{ 'assets/img/eva.png' | relative_url }}" alt="EVA" class="img-fluid rounded z-depth-1" loading="eager">
+    <img src="{{ 'assets/img/airec_lift.png' | relative_url }}" alt="EVA" class="img-fluid rounded z-depth-1" loading="eager">
   </swiper-slide>
   <swiper-slide>
-    <img src="{{ 'assets/img/edan.jpg' | relative_url }}" alt="EDAN" class="img-fluid rounded z-depth-1" loading="lazy">
+    <img src="{{ 'assets/img/valkyrie2.png' | relative_url }}" alt="EVA" class="img-fluid rounded z-depth-1" loading="eager">
+  </swiper-slide>
+  <swiper-slide>
+    <img src="{{ 'assets/img/edan2.jpg' | relative_url }}" alt="EDAN" class="img-fluid rounded z-depth-1" loading="lazy">
+  </swiper-slide>
+    <swiper-slide>
+    <img src="{{ 'assets/img/eva.png' | relative_url }}" alt="EVA" class="img-fluid rounded z-depth-1" loading="eager">
   </swiper-slide>
   <swiper-slide>
     <img src="{{ 'assets/img/justin.jpeg' | relative_url }}" alt="Justin" class="img-fluid rounded z-depth-1" loading="lazy">
