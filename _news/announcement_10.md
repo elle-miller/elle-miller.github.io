@@ -1,8 +1,7 @@
 ---
 layout: post
-date: 2026-05-18
+date: 2026-03-16
 inline: true
 related_posts: false
 ---
-
-**Upcoming**: I'm going to give a public talk in an Edinburgh pub for Pint of Science UK 🍺
+I wrote my first blogpost! Read it here: ["The art of robot reinforcement learning"](https://parallelles.substack.com/p/the-art-of-robot-reinforcement-learning) ✨

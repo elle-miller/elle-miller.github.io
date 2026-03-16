@@ -77,7 +77,11 @@
                 </li>
               {% else %}
                 <li class="nav-item {% if page.url contains p.permalink %}active{% endif %}">
-                  {% if p.cv_pdf %}
+                  {% if p.external_url %}
+                    <a class="nav-link" href="{{ p.external_url }}" target="_blank" rel="noopener noreferrer">
+                      {{- p.title }}
+                    </a>
+                  {% elsif p.cv_pdf %}
                     {% assign url = p.cv_pdf | prepend: '/assets/pdf/' %}
                     <a class="nav-link" href="{{ url | relative_url }}" download>
                       {{- p.title }}
