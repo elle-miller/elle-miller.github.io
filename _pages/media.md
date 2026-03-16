@@ -10,6 +10,12 @@ images:
 
 ### YouTube videos
 
+**"Blind Superhuman Dexterity: Tactile RL via World Models (NeurIPS 2025)"** — BeNeRL seminar
+
+<div class="video-wrapper mb-4">
+  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=m2qHG4krcUs&t=3s" title="Blind Superhuman Dexterity: Tactile RL via World Models (NeurIPS 2025)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 **"Enhancing Tactile-based RL for Robotic Control"** — NeurIPS video
 
 <div class="video-wrapper mb-4">

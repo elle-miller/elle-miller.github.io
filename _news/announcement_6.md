@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am attending CoRL/Humanoids in Seoul 🇰🇷
+I am attending CoRL/Humanoids in Seoul, giving a spotlight presentation at the Dexterous Humanoid Manipulation workshop 🇰🇷
