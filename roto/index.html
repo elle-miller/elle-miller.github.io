@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="RoTO: Robot Tactile Olympiad — a reinforcement learning benchmark for tactile manipulation">
+    <meta name="keywords" content="Reinforcement learning, robotics, tactile sensing, benchmark, Isaac Lab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roto: Robot Tactile Olympiad</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <style>
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background: linear-gradient(100deg, #ffffff 0%, #cef6fc 100%);
+            min-height: 100vh;
+        }
+        .max-desktop {
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+<nav class="bg-white/70 backdrop-blur-md sticky top-0 z-50 shadow-md">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex-shrink-0">
+                <span id="nav-title" class="text-xl sm:text-2xl font-black text-indigo-600 opacity-0 transition-opacity duration-300">
+                    RoTO: Robot Tactile Olympiad
+                </span>
+            </div>
+            <div class="flex">
+                <a href="https://elle-miller.github.io" class="text-gray-600 hover:text-indigo-600 font-medium px-3 py-2 rounded-md transition duration-150 ease-in-out flex items-center">
+                    <i class="fas fa-home mr-1"></i> Elle Miller Home
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="py-8 sm:py-16">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center space-y-6">
+            <h1 id="main-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-gray-900">
+                RoTO: Robot Tactile Olympiad
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
+                A reinforcement learning benchmark environment to standardise and promote research in tactile-based manipulation (simulated in NVIDIA Isaac Lab).
+            </p>
+
+            <div class="flex justify-center">
+                <img src="https://raw.githubusercontent.com/elle-miller/roto/master/readme_assets/images/roto.png"
+                     alt="RoTO benchmark overview"
+                     class="max-w-md w-full rounded-2xl shadow-xl border border-white/50"
+                     width="400"
+                     height="auto">
+            </div>
+
+            <div class="text-lg sm:text-xl font-medium text-gray-700 space-y-3">
+                <p class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                    <a href="https://elle-miller.github.io" class="font-bold text-indigo-700 hover:text-indigo-900">Elle Miller</a>
+                </p>
+                <p class="text-base text-gray-600">University of Edinburgh</p>
+            </div>
+
+            <div class="mt-8 p-4 bg-[#e0faf3] backdrop-blur-sm rounded-xl shadow-lg">
+                <p class="text-lg font-semibold text-gray-800 flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
+                    <span class="text-[#31bd97] font-extrabold"><i class="fas fa-book mr-2"></i> Introduced in NeurIPS 2025</span>
+                    <a href="https://elle-miller.github.io/tactile_rl/" class="text-[#31bd97] font-extrabold hover:underline transition duration-150">
+                        Paper project page →
+                    </a>
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+                <a href="https://github.com/elle-miller/roto" class="bg-purple-300 hover:bg-purple-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+                    <i class="fab fa-github mr-2"></i>
+                    <span>Benchmark code</span>
+                </a>
+                <a href="https://github.com/elle-miller/multimodal_rl" class="bg-violet-300 hover:bg-violet-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+                    <i class="fab fa-github mr-2"></i>
+                    <span>Agent code (multimodal_rl)</span>
+                </a>
+                <a href="https://arxiv.org/pdf/2510.21609" class="bg-green-300 hover:bg-green-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+                    <i class="fas fa-file-pdf mr-2"></i>
+                    <span>Paper (PDF)</span>
+                </a>
+                <a href="https://arxiv.org/abs/2510.21609" class="bg-blue-300 hover:bg-blue-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+                    <i class="ai ai-arxiv mr-2 text-xl"></i>
+                    <span>arXiv</span>
+                </a>
+                <a href="https://github.com/elle-miller/roto_paper_results" class="bg-orange-300 hover:bg-orange-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+                    <i class="far fa-folder-open mr-2"></i>
+                    <span>Checkpoints &amp; logs</span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=m2qHG4krcUs" class="bg-pink-300 hover:bg-pink-400 text-gray-800 font-bold py-2 px-4 rounded-xl shadow-lg transition duration-300 flex items-center">
+                    <i class="fab fa-youtube mr-2"></i>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-8 rounded-3xl shadow-xl">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">Abstract</h2>
+            <div class="text-lg text-gray-700 space-y-4 text-justify">
+                <p>
+                    Achieving safe, reliable real-world robotic manipulation requires agents to evolve
+                    beyond vision and incorporate tactile sensing to overcome sensory deficits and
+                    reliance on idealised state information. Despite its potential, the efficacy of tactile
+                    sensing in reinforcement learning (RL) remains inconsistent.
+                </p>
+                <p>
+                    We address this by developing self-supervised learning (SSL) methodologies to more effectively
+                    harness tactile observations, focusing on a scalable setup of proprioception and
+                    sparse binary contacts. We empirically demonstrate that sparse binary tactile
+                    signals are critical for dexterity, particularly for interactions that proprioceptive
+                    control errors do not register, such as decoupled robot-object motions.
+                </p>
+                <p>
+                    Our agents achieve superhuman dexterity in complex contact tasks (ball bouncing and Baoding
+                    ball rotation). Furthermore, we find that decoupling the SSL memory from the onpolicy
+                    memory can improve performance. We release the Robot Tactile Olympiad (RoTO) benchmark to
+                    standardise and promote future research in tactile-based manipulation.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-8 rounded-3xl shadow-xl">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2">Bounce: Shadow Hand</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gray-800">States+Proprio+Tactile</h3>
+                    <video autoplay controls muted loop playsinline class="w-full rounded-xl shadow-lg">
+                        <source src="static/shadow_bounce_vision.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="text-gray-600">Blah blah...</p>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gray-800">Proprio+Tactile</h3>
+                    <video autoplay controls muted loop playsinline class="w-full rounded-xl shadow-lg">
+                        <source src="static/shadow_bounce_blind.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="text-gray-600">Same result basically blah blah...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-8 rounded-3xl shadow-xl">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2">Bounce: Allegro Hand</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gray-800">States+Proprio+Tactile</h3>
+                    <video autoplay controls muted loop playsinline class="w-full rounded-xl shadow-lg">
+                        <source src="static/allegro_bounce_vision.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="text-gray-600">Blah blah...</p>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gray-800">Proprio+Tactile</h3>
+                    <video autoplay controls muted loop playsinline class="w-full rounded-xl shadow-lg">
+                        <source src="static/shadow_bounce_blind.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="text-gray-600">Waiting......</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="py-8">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-8 rounded-3xl shadow-xl max-w-2xl mx-auto flex flex-col items-center">
+            <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=BW-uKoHVbRL2q2hqhlx7yLdPq8Xih8-7v2XE5gRjDRo&cl=ffffff&w=a"></script>
+            <p style="text-align: center; font-size: 0.9em; margin-top: 5px; color: #666;">Visitors around the world</p>
+        </div>
+    </div>
+</section>
+
+<section class="py-8" id="BibTeX">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gray-700 p-8 rounded-3xl shadow-xl text-white">
+            <h2 class="text-3xl font-extrabold mb-4 border-b-2 border-gray-500 pb-2">Citation</h2>
+            <p class="text-gray-300 mb-4">If you use RoTO or this work, please cite:</p>
+            <pre class="whitespace-pre-wrap break-words bg-gray-800 p-4 rounded-lg text-sm overflow-x-auto font-mono"><code>@inproceedings{miller2025tactilerl,
+  author    = {Miller, Elle and McInroe, Trevor and Abel, David and Mac Aodha, Oisin and Vijayakumar, Sethu},
+  title     = {Enhancing Tactile-based Reinforcement Learning for Robotic Control},
+  booktitle   = {NeurIPS},
+  year      = {2025},
+}</code></pre>
+        </div>
+    </div>
+</section>
+
+<footer class="py-6 bg-white/70 backdrop-blur-md mt-8 shadow-inner">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-sm text-gray-600">
+            Website template styling inspired by <a href="https://github.com/nerfies/nerfies.github.io" class="text-indigo-600 hover:text-indigo-800 transition duration-150">NeRFies</a>.
+        </p>
+    </div>
+</footer>
+
+<script>
+    window.onload = function() {
+        const mainTitle = document.getElementById('main-title');
+        const navTitle = document.getElementById('nav-title');
+        if (mainTitle && navTitle) {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        navTitle.classList.remove('opacity-0');
+                        navTitle.classList.add('opacity-100');
+                    } else {
+                        navTitle.classList.remove('opacity-100');
+                        navTitle.classList.add('opacity-0');
+                    }
+                });
+            }, { root: null, rootMargin: '0px', threshold: 0.0 });
+            observer.observe(mainTitle);
+        }
+
+    };
+</script>
+
+</body>
+</html>
