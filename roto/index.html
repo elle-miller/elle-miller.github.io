@@ -114,23 +114,10 @@
             <h2 class="text-3xl font-extrabold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">Abstract</h2>
             <div class="text-lg text-gray-700 space-y-4 text-justify">
                 <p>
-                    Achieving safe, reliable real-world robotic manipulation requires agents to evolve
-                    beyond vision and incorporate tactile sensing to overcome sensory deficits and
-                    reliance on idealised state information. Despite its potential, the efficacy of tactile
-                    sensing in reinforcement learning (RL) remains inconsistent.
+                    Tactile-based reinforcement learning (RL) is currently hindered by fragmented research and a focus on over-saturated orientation tasks. We introduce the Robot Tactile Olympiad (roto), a GPU-parallelised benchmark designed to standardise tactile-based RL across three distinct robotic morphologies (10-DOF to 24-DOF). Unlike prior benchmarks, \texttt{roto} focuses on end-to-end ``blind'' manipulation, utilising only proprioception and tactile sensing without state information or privileged teacher-student distillation.
                 </p>
                 <p>
-                    We address this by developing self-supervised learning (SSL) methodologies to more effectively
-                    harness tactile observations, focusing on a scalable setup of proprioception and
-                    sparse binary contacts. We empirically demonstrate that sparse binary tactile
-                    signals are critical for dexterity, particularly for interactions that proprioceptive
-                    control errors do not register, such as decoupled robot-object motions.
-                </p>
-                <p>
-                    Our agents achieve superhuman dexterity in complex contact tasks (ball bouncing and Baoding
-                    ball rotation). Furthermore, we find that decoupling the SSL memory from the onpolicy
-                    memory can improve performance. We release the Robot Tactile Olympiad (RoTO) benchmark to
-                    standardise and promote future research in tactile-based manipulation.
+                    We demonstrate a significant performance leap, with our blind agents achieving 13 Baoding ball rotations in 10 seconds, an order of magnitude faster than current state-of-the-art speeds. By open-sourcing our environments and robustly tuned baselines, we reduce the barrier to entry and enable researchers to prioritise fundamental algorithmic challenges over tedious RL tuning.
                 </p>
             </div>
         </div>
