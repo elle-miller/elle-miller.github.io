@@ -36,6 +36,7 @@ images:
 
 ### Media
 
+- The BBC covered the Valkyrie robot's return to NASA! I ended up doing a short interview on my time at NASA to caregiving robots now. Sethu is on 18:28, my part is from 22:18 — [BBC World Service](https://www.bbc.co.uk/sounds/play/w3ct8jxn)
 - Local newspaper interview as high school student — [Daily Telegraph article](https://www.dailytelegraph.com.au/newslocal/north-shore/north-shore-hsc-graduates-have-ambitious-plans-after-incredible-results/news-story/7ec31c214ea7d27c9d70d5a2ccc24e11#:~:text=Meanwhile%2C%20Elle%20Miller%20has%20her%20sights%20set%20on%20NASA%20after%20her%20stunning%20results.)
 
 ### Outreach
