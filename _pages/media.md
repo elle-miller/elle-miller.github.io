@@ -10,6 +10,12 @@ images:
 
 ### YouTube videos
 
+**"Would You Let a Humanoid Look After Your Loved Ones?"** — Pint of Science public talk
+
+<div class="video-wrapper mb-4">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/4CAX9SHT1Fo" title="Would You Let a Humanoid Look After Your Loved Ones?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 **"Blind Superhuman Dexterity: Tactile RL via World Models (NeurIPS 2025)"** — BeNeRL seminar
 
 <div class="video-wrapper mb-4">
