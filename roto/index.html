@@ -54,12 +54,6 @@
                 A reinforcement learning benchmark environment to standardise and promote research in tactile-based manipulation (simulated in NVIDIA Isaac Lab).
             </p>
 
-            <div class="flex justify-center">
-                <img src="roto/static/roto2.png"
-                     alt="RoTO benchmark overview"
-                     class="max-w-md w-full rounded-2xl shadow-xl border border-white/50">
-            </div>
-
             <div class="text-lg sm:text-xl font-medium text-gray-700 space-y-3">
                 <!-- Authors with affiliation superscripts: 1 = Edinburgh, 2 = NUS -->
                 <p class="flex flex-wrap justify-center gap-x-6 gap-y-2">
@@ -104,29 +98,6 @@
                     <i class="far fa-folder-open mr-2"></i>
                     <span>checkpoints &amp; logs</span>
                 </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-8">
-    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white p-8 rounded-3xl shadow-xl">
-            <h2 class="text-3xl font-extrabold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">Abstract</h2>
-            <div class="text-lg text-gray-700 space-y-4 text-justify">
-                <p>
-                    Tactile-based reinforcement learning (RL) is currently hindered by fragmented research and a focus on over-saturated orientation tasks. We introduce the Robot Tactile Olympiad (roto), a GPU-parallelised benchmark designed to standardise tactile-based RL across three distinct robotic morphologies (10-DOF to 24-DOF). Unlike prior benchmarks, \texttt{roto} focuses on end-to-end ``blind'' manipulation, utilising only proprioception and tactile sensing without state information or privileged teacher-student distillation.
-                </p>
-                <p>
-                    We demonstrate a significant performance leap, with our blind agents achieving 13 Baoding ball rotations in 10 seconds, an order of magnitude faster than current state-of-the-art speeds. By open-sourcing our environments and robustly tuned baselines, we reduce the barrier to entry and enable researchers to prioritise fundamental algorithmic challenges over tedious RL tuning.
-                </p>
-                <p class="font-semibold">Key features:</p>
-                <ul class="space-y-3 list-disc pl-5 text-gray-700 text-lg">
-                    <li>5 robot embodiments: 4× hands + 1× arm (Allegro Hand, ORCA Hand, Shadow Dexterous Hand, Shadow Dexterous Hand Lite, Franka)</li>
-                    <li>3 tactile-diverse tasks (and counting): find an object, ball bouncing, and Baoding ball rotation</li>
-                    <li>❗ Hyperparameter optimisation ❗ — essential but often missing</li>
-                    <li>Well-tuned baselines (40-trial sweep) that reach state-of-the-art speeds in sim</li>
-                </ul>
             </div>
         </div>
     </div>
