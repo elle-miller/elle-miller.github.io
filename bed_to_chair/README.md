@@ -12,6 +12,7 @@ Single-video panels:
 
 ```
 static/videos/forces/{ball,human}.mp4
+static/videos/mass/{all,single}.mp4
 static/videos/size/{little,big}.mp4
 static/videos/ablation/{wb_gate,wb_no_gate}.mp4
 ```
