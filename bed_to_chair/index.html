@@ -117,6 +117,58 @@
     </div>
 </section>
 
+<section class="py-8">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-8 rounded-3xl shadow-xl">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2">Force Perturbation</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gray-800">Ball</h3>
+                    <div class="video-slot relative w-full aspect-video rounded-xl shadow-lg overflow-hidden">
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="./static/videos/forces/ball.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gray-800">Human</h3>
+                    <div class="video-slot relative w-full aspect-video rounded-xl shadow-lg overflow-hidden">
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="./static/videos/forces/human.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-8 rounded-3xl shadow-xl">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2">Ablation Study</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gray-800">wb_gate</h3>
+                    <div class="video-slot relative w-full aspect-video rounded-xl shadow-lg overflow-hidden">
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="./static/videos/ablation/wb_gate.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gray-800">wb_no_gate</h3>
+                    <div class="video-slot relative w-full aspect-video rounded-xl shadow-lg overflow-hidden">
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="./static/videos/ablation/wb_no_gate.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer class="py-6 bg-white/70 backdrop-blur-md mt-8 shadow-inner">
     <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p class="text-sm text-gray-600">
@@ -173,12 +225,7 @@
         const dotEls = Array.from(root.querySelectorAll(".carousel-dot"));
         let index = 0;
 
-        videos.forEach((video) => {
-            const source = video.querySelector("source");
-            const hide = () => video.classList.add("is-missing");
-            video.addEventListener("error", hide);
-            if (source) source.addEventListener("error", hide);
-        });
+        videos.forEach(bindMissingVideo);
 
         function setActive(next) {
             index = (next + NUM_SEEDS) % NUM_SEEDS;
@@ -206,8 +253,16 @@
         setActive(0);
     }
 
+    function bindMissingVideo(video) {
+        const hide = () => video.classList.add("is-missing");
+        video.addEventListener("error", hide);
+        const source = video.querySelector("source");
+        if (source) source.addEventListener("error", hide);
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll("[data-video-carousel]").forEach(buildCarousel);
+        document.querySelectorAll(".video-slot video").forEach(bindMissingVideo);
 
         const mainTitle = document.getElementById("main-title");
         const navTitle = document.getElementById("nav-title");
