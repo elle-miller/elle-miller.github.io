@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Bed-to-Chair Transfer with Whole-Body Reinforcement Learning on AIREC">
+    <meta name="keywords" content="Reinforcement learning, assistive robotics, bed-to-chair transfer, AIREC">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bed-to-Chair Transfer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        :root { font-family: 'Inter', sans-serif; }
+        body {
+            background: linear-gradient(100deg, #d7f6fe 0%, #ffd1fe 100%);
+            min-height: 100vh;
+        }
+        .max-desktop { max-width: 1200px; }
+        .carousel-viewport { overflow: hidden; }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.45s ease-in-out;
+        }
+        .carousel-track > .slide {
+            flex: 0 0 100%;
+            width: 100%;
+            min-width: 100%;
+        }
+        .video-slot {
+            background: #f3f4f6;
+        }
+        .video-slot video {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #111827;
+        }
+        .video-slot video.is-missing {
+            display: none;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+<nav class="bg-white/70 backdrop-blur-md sticky top-0 z-50 shadow-md">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex-shrink-0">
+                <span id="nav-title" class="text-xl sm:text-2xl font-black text-indigo-600 opacity-0 transition-opacity duration-300">
+                    Bed-to-Chair Transfer
+                </span>
+            </div>
+            <div class="flex">
+                <a href="https://elle-miller.github.io" class="text-gray-600 hover:text-indigo-600 font-medium px-3 py-2 rounded-md transition duration-150 ease-in-out flex items-center">
+                    <i class="fas fa-home mr-1"></i> Elle Miller Home
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="py-8 sm:py-16">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center space-y-6">
+            <h1 id="main-title" class="text-4xl sm:text-6xl font-extrabold leading-tight text-gray-900">
+                Learning Bed-to-Chair Transfer<br> with Whole-Body RL
+            </h1>
+            <div class="text-lg sm:text-xl font-medium text-gray-700 space-y-3">
+                <p class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                    <a href="https://elle-miller.github.io" class="font-bold text-indigo-700 hover:text-indigo-900">Elle Miller</a>
+                </p>
+                <p class="text-base text-gray-600">University of Edinburgh</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-8 rounded-3xl shadow-xl">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-2 border-b-2 border-gray-200 pb-2">Ball Environment</h2>
+            <p class="text-gray-600 mt-3 mb-6">Five random seeds. Left: RL baseline. Right: our method.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div data-video-carousel data-title="RL Baseline" data-src="./static/videos/ball/rl_baseline"></div>
+                <div data-video-carousel data-title="Our Method" data-src="./static/videos/ball/our_method"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-8 rounded-3xl shadow-xl">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-2 border-b-2 border-gray-200 pb-2">Human (Near)</h2>
+            <p class="text-gray-600 mt-3 mb-6">Five random seeds. Left: RL baseline. Right: our method.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div data-video-carousel data-title="RL Baseline" data-src="./static/videos/human_near/rl_baseline"></div>
+                <div data-video-carousel data-title="Our Method" data-src="./static/videos/human_near/our_method"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-8 rounded-3xl shadow-xl">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-2 border-b-2 border-gray-200 pb-2">Human (Far)</h2>
+            <p class="text-gray-600 mt-3 mb-6">Five random seeds. Left: RL baseline. Right: our method.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div data-video-carousel data-title="RL Baseline" data-src="./static/videos/human_far/rl_baseline"></div>
+                <div data-video-carousel data-title="Our Method" data-src="./static/videos/human_far/our_method"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-6 bg-white/70 backdrop-blur-md mt-8 shadow-inner">
+    <div class="max-desktop mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-sm text-gray-600">
+            Website template styling inspired by <a href="https://github.com/nerfies/nerfies.github.io" class="text-indigo-600 hover:text-indigo-800 transition duration-150">NeRFies</a>.
+        </p>
+    </div>
+</footer>
+
+<script>
+    const NUM_SEEDS = 5;
+
+    function buildCarousel(root) {
+        const title = root.dataset.title;
+        const srcBase = root.dataset.src;
+
+        const slides = Array.from({ length: NUM_SEEDS }, (_, i) => {
+            const seed = i + 1;
+            const src = `${srcBase}/seed_${seed}.mp4`;
+            return `
+                <div class="slide px-1">
+                    <div class="video-slot relative w-full aspect-video rounded-xl shadow-lg overflow-hidden">
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="${src}" type="video/mp4">
+                        </video>
+                    </div>
+                    <p class="mt-3 text-center text-sm font-semibold text-gray-600">Seed ${seed}</p>
+                </div>`;
+        }).join("");
+
+        const dots = Array.from({ length: NUM_SEEDS }, (_, i) =>
+            `<button type="button" class="carousel-dot w-3 h-3 rounded-full focus:outline-none ${i === 0 ? "bg-indigo-600" : "bg-gray-400"}" data-index="${i}" aria-label="Seed ${i + 1}"></button>`
+        ).join("");
+
+        root.innerHTML = `
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-gray-800">${title}</h3>
+                <div class="relative">
+                    <div class="carousel-viewport w-full rounded-xl">
+                        <div class="carousel-track">${slides}</div>
+                    </div>
+                    <button type="button" class="carousel-prev absolute top-1/2 left-0 -translate-y-1/2 p-3 bg-black/50 text-white hover:bg-black/70 transition-colors rounded-r-xl focus:outline-none" aria-label="Previous seed">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button type="button" class="carousel-next absolute top-1/2 right-0 -translate-y-1/2 p-3 bg-black/50 text-white hover:bg-black/70 transition-colors rounded-l-xl focus:outline-none" aria-label="Next seed">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="flex justify-center space-x-2">${dots}</div>
+            </div>
+        `;
+
+        const track = root.querySelector(".carousel-track");
+        const videos = Array.from(root.querySelectorAll("video"));
+        const dotEls = Array.from(root.querySelectorAll(".carousel-dot"));
+        let index = 0;
+
+        videos.forEach((video) => {
+            const source = video.querySelector("source");
+            const hide = () => video.classList.add("is-missing");
+            video.addEventListener("error", hide);
+            if (source) source.addEventListener("error", hide);
+        });
+
+        function setActive(next) {
+            index = (next + NUM_SEEDS) % NUM_SEEDS;
+            track.style.transform = `translateX(${-index * 100}%)`;
+            dotEls.forEach((dot, i) => {
+                dot.classList.toggle("bg-indigo-600", i === index);
+                dot.classList.toggle("bg-gray-400", i !== index);
+            });
+            videos.forEach((video, i) => {
+                if (video.classList.contains("is-missing")) return;
+                if (i === index) {
+                    video.play().catch(() => {});
+                } else {
+                    video.pause();
+                }
+            });
+        }
+
+        root.querySelector(".carousel-prev").addEventListener("click", () => setActive(index - 1));
+        root.querySelector(".carousel-next").addEventListener("click", () => setActive(index + 1));
+        dotEls.forEach((dot) => {
+            dot.addEventListener("click", () => setActive(Number(dot.dataset.index)));
+        });
+
+        setActive(0);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("[data-video-carousel]").forEach(buildCarousel);
+
+        const mainTitle = document.getElementById("main-title");
+        const navTitle = document.getElementById("nav-title");
+        if (mainTitle && navTitle) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) {
+                        navTitle.classList.remove("opacity-0");
+                        navTitle.classList.add("opacity-100");
+                    } else {
+                        navTitle.classList.remove("opacity-100");
+                        navTitle.classList.add("opacity-0");
+                    }
+                });
+            }, { threshold: 0.0 });
+            observer.observe(mainTitle);
+        }
+    });
+</script>
+
+</body>
+</html>
