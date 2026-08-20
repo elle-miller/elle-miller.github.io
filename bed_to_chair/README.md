@@ -15,6 +15,7 @@ static/videos/forces/{ball,human}.mp4
 static/videos/mass/{all,single}.mp4
 static/videos/size/{little,big}.mp4
 static/videos/ablation/{wb_gate,wb_no_gate}.mp4
+static/videos/sim2real/{camera,tamon_camera,...}.mp4
 ```
 
 Empty slots stay blank until the file is added.
