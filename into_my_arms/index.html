@@ -26,7 +26,6 @@
         body { font-family: 'Inter', sans-serif; background: #0d0b0a; color: var(--ink); margin: 0; }
         .serif { font-family: 'Fraunces', Georgia, serif; font-optical-sizing: auto; }
         .max-page { max-width: 1180px; }
-        .eyebrow { letter-spacing: .22em; text-transform: uppercase; font-size: .75rem; font-weight: 600; }
 
         .hero { position: relative; height: 100vh; min-height: 560px; overflow: hidden; background: #0d0b0a; }
         @media (max-width: 768px) { .hero { height: 100svh; } }
@@ -71,6 +70,29 @@
             100% { box-shadow: 0 0 0 0 rgba(184,137,74,0); }
         }
 
+        /* Music: fixed double-quaver toggle */
+        #sound-toggle {
+            position: fixed; z-index: 40; right: 1.25rem; bottom: 1.25rem;
+            width: 3rem; height: 3rem; border-radius: 999px;
+            display: inline-flex; align-items: center; justify-content: center;
+            background: rgba(255,255,255,.12); color: #fff;
+            border: 1px solid rgba(255,255,255,.35);
+            backdrop-filter: blur(8px);
+            font-size: 1.35rem; line-height: 1;
+            cursor: pointer; transition: background .2s ease, transform .2s ease, opacity .2s;
+        }
+        #sound-toggle:hover { background: rgba(255,255,255,.24); }
+        #sound-toggle.is-playing {
+            background: rgba(184,137,74,.35);
+            border-color: rgba(184,137,74,.7);
+            animation: notePulse 1.8s ease-in-out infinite;
+        }
+        #sound-toggle.is-missing { display: none; }
+        @keyframes notePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.06); }
+        }
+
         .visitors {
             background: var(--paper);
             padding: 2.5rem 1.25rem 3rem;
@@ -85,10 +107,22 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 12rem;
+            justify-content: center;
+            text-align: center;
+            color: #6b5f55;
+            font-size: .95rem;
+            line-height: 1.5;
+        }
+        .visitors-card code {
+            font-size: .8rem;
+            background: #f2ebdf;
+            padding: .15rem .4rem;
+            border-radius: 4px;
         }
 
         @media (prefers-reduced-motion: reduce) {
-            .grain, .soon-pill .dot { animation: none; }
+            .grain, .soon-pill .dot, #sound-toggle.is-playing { animation: none; }
             .fade-in { opacity: 1; transform: none; animation: none; }
         }
     </style>
@@ -119,10 +153,21 @@
     </div>
 </header>
 
+<button id="sound-toggle" type="button" class="is-missing" aria-pressed="false" aria-label="Play Chopin nocturne" title="Chopin — Nocturne Op. 9 No. 2">
+    <span aria-hidden="true">♬</span>
+</button>
+<audio id="theme-audio" loop preload="none">
+    <source src="./static/audio/theme.mp3" type="audio/mpeg">
+</audio>
+
 <section class="visitors" aria-label="Visitor map">
-    <div class="visitors-card">
-        <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=BW-uKoHVbRL2q2hqhlx7yLdPq8Xih8-7v2XE5gRjDRo&cl=ffffff&w=a"></script>
-        <p style="text-align: center; font-size: 0.9em; margin-top: 5px; color: #666;">Visitors around the world</p>
+    <div class="visitors-card" id="visitor-map">
+        <!-- Fresh MapMyVisitors embed for into_my_arms goes here (do NOT reuse tactile_rl).
+             Create at https://mapmyvisitors.com/add with URL https://elle-miller.github.io/into_my_arms/
+             then replace this placeholder with the generated <script>…</script>. -->
+        <p><strong>Visitor map</strong></p>
+        <p style="margin-top:.5rem">Create a new MapMyVisitors widget for <code>into_my_arms</code> (not the tactile_rl one), then paste the embed here.</p>
+        <p style="margin-top:.75rem;font-size:.85rem"><a href="https://mapmyvisitors.com/add" style="color:#b4322b;text-decoration:underline">mapmyvisitors.com/add</a></p>
     </div>
 </section>
 
@@ -133,6 +178,46 @@
         video.addEventListener("loadeddata", () => { if (poster) poster.style.opacity = "0"; });
         video.addEventListener("playing", () => { if (poster) poster.style.display = "none"; });
     }
+
+    (function setupMusic() {
+        const btn = document.getElementById("sound-toggle");
+        const audio = document.getElementById("theme-audio");
+        if (!btn || !audio) return;
+        const TARGET = 0.55;
+        let fadeTimer = null;
+
+        fetch(audio.querySelector("source").src, { method: "HEAD" })
+            .then((r) => { if (r.ok) btn.classList.remove("is-missing"); })
+            .catch(() => {});
+
+        const fadeTo = (target, done) => {
+            clearInterval(fadeTimer);
+            fadeTimer = setInterval(() => {
+                const step = 0.04 * Math.sign(target - audio.volume);
+                const next = audio.volume + step;
+                if ((step > 0 && next >= target) || (step < 0 && next <= target) || step === 0) {
+                    audio.volume = target;
+                    clearInterval(fadeTimer);
+                    if (done) done();
+                } else {
+                    audio.volume = next;
+                }
+            }, 30);
+        };
+
+        btn.addEventListener("click", () => {
+            if (btn.classList.contains("is-playing")) {
+                fadeTo(0, () => { audio.pause(); });
+                btn.classList.remove("is-playing");
+                btn.setAttribute("aria-pressed", "false");
+            } else {
+                audio.volume = 0;
+                audio.play().then(() => fadeTo(TARGET)).catch(() => {});
+                btn.classList.add("is-playing");
+                btn.setAttribute("aria-pressed", "true");
+            }
+        });
+    })();
 </script>
 </body>
 </html>
