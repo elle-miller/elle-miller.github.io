@@ -50,14 +50,18 @@
         .fade-in.d1 { animation-delay: .5s; } .fade-in.d2 { animation-delay: 1.1s; } .fade-in.d3 { animation-delay: 1.7s; }
         @keyframes fadeIn { to { opacity: 1; transform: none; } }
 
-        .soon-pill {
+        .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+        .soon-pill, .paper-pill {
             display: inline-flex; align-items: center; gap: .55rem;
             padding: .55rem 1.05rem; border-radius: 999px;
             background: rgba(255,255,255,.12); color: #fff;
             border: 1px solid rgba(255,255,255,.35);
             backdrop-filter: blur(8px);
             font-weight: 600; font-size: .92rem;
+            text-decoration: none;
+            transition: background .2s ease;
         }
+        .paper-pill:hover { background: rgba(255,255,255,.24); }
         .soon-pill .dot {
             width: .55rem; height: .55rem; border-radius: 999px;
             background: var(--gold);
@@ -147,8 +151,9 @@
         <p class="mt-6 text-base sm:text-lg text-white/80 max-w-2xl leading-relaxed fade-in d2">
             The first fully autonomous bed-to-wheelchair transfer of a medical mannequin by a humanoid robot.
         </p>
-        <div class="mt-8 fade-in d3">
+        <div class="mt-8 cta-row fade-in d3">
             <span class="soon-pill"><span class="dot" aria-hidden="true"></span> Website coming soon</span>
+            <a class="paper-pill" href="https://arxiv.org/abs/2611.29771" target="_blank" rel="noopener noreferrer">Paper</a>
         </div>
     </div>
 </header>
